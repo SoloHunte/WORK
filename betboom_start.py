@@ -79,6 +79,7 @@ for sportID in sportActive:
                     if sportid_my == 0:
                         continue
                     else:
+                        cur = skill_scaner.cur
                         id_gamer1 = hashlib.md5((str(gamer1)+str(sportid_my)+bk_name).encode('utf-8')).hexdigest()
                         id_gamer2 = hashlib.md5((str(gamer2) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
                         bk_id_gamer1 = hashlib.md5((str(id_gamer1) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()

@@ -11,10 +11,6 @@ import configobj
 import mysql.connector
 from datetime import datetime
 
-global conn
-global cur
-
-
 
 
 
@@ -344,7 +340,7 @@ def add_koef(koef_skill, bk_id):
             continue
     n_sql = n_sql[0:-1]
     if n_sql != '':
-        sql = "INSERT INTO name_koef (skill_id, bk_id, short_name, comment) VALUES " +\
+        sql = "INSERT INTO name_koef (skill_id, bk_id, short_name, comment) VALUES " + \
               n_sql + " ON DUPLICATE KEY UPDATE short_name = VALUES(short_name), comment = VALUES(comment)"
         query = sql
         cur.execute(query)
