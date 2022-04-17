@@ -11,6 +11,9 @@ import configobj
 import mysql.connector
 from datetime import datetime
 
+global conn
+global cur
+
 
 
 
