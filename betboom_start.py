@@ -2,7 +2,8 @@ import datetime
 import hashlib
 import mysql.connector
 import requests
-import skill_scaner
+#impot skill_scaner
+import skill_scaner as skill
 
 headers = {
     'Host': 'sport.betboom.ru',
@@ -20,18 +21,30 @@ headers = {
     'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
     'countryCode': 'RU',
 }
+#Stas
+while skill.connect():
+    time.sleep(60)
+cur = skill.cur
+conn = skill.conn
+timeout = 30
+bk_name = 'betboom_ru'
 
+#End Stas
 voc_sports = {1: 1, 3: 2, 15: 3, 4: 4, 12: 5, 10: 6, 94: 7, 53: 8, 95: 9, 96: 10, 17: 14, 13: 15}
-session = requests.Session()
+#session = requests.Session()
+skill.start_session()
 
 link = 'https://sport.betboom.ru/Live/Sports?langId=1&partnerId=147&countryCode=RU'
-response = session.get(link, headers=headers)
+#Делаем через сессию из skill_scaner
+#response = session.get(link, headers=headers)
+data = skill.scaner_data_json(link, headers, timeout)
 kolGame = 0
 sportActive = {}
 info_liga = {}
 info_gamer = {}
 bk_name = 'betboom_bet'
-for voc in response.json():
+#for voc in response.json():
+for voc in data:
     kolGame += voc['EC']
     sportActive[voc['Id']] = voc['N']
 print(kolGame)
@@ -40,6 +53,7 @@ gamerAll = {}
 
 for sportID in sportActive:
     link = f'https://sport.betboom.ru/Live/GetLiveEvents?sportId={sportID}&checkIsActiveAndBetStatus=false&stakeTypes=All&partnerId=147&languageId=1&countryCode=RU&langId=1'
+    #Здесь также через сессию из skill_scaner
     response = session.get(link)
     data = response.json()
     if 'CNT' in data:
