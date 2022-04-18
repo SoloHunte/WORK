@@ -1,8 +1,11 @@
 import datetime
 import hashlib
+import time
+
 import mysql.connector
 import requests
 #impot skill_scaner
+import skill_scaner
 import skill_scaner as skill
 
 headers = {
@@ -42,7 +45,7 @@ kolGame = 0
 sportActive = {}
 info_liga = {}
 info_gamer = {}
-bk_name = 'betboom_bet'
+# bk_name = 'betboom_bet'
 #for voc in response.json():
 for voc in data:
     kolGame += voc['EC']
@@ -54,7 +57,7 @@ gamerAll = {}
 for sportID in sportActive:
     link = f'https://sport.betboom.ru/Live/GetLiveEvents?sportId={sportID}&checkIsActiveAndBetStatus=false&stakeTypes=All&partnerId=147&languageId=1&countryCode=RU&langId=1'
     #Здесь также через сессию из skill_scaner
-    response = session.get(link)
+    response = skill_scaner.start_session.session.get(link)
     data = response.json()
     if 'CNT' in data:
         for country in data['CNT']:
@@ -93,7 +96,7 @@ for sportID in sportActive:
                     if sportid_my == 0:
                         continue
                     else:
-                        cur = skill_scaner.cur
+                        cur = skill_scaner.connect().cur
                         id_gamer1 = hashlib.md5((str(gamer1)+str(sportid_my)+bk_name).encode('utf-8')).hexdigest()
                         id_gamer2 = hashlib.md5((str(gamer2) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
                         bk_id_gamer1 = hashlib.md5((str(id_gamer1) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()

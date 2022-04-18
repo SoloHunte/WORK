@@ -12,8 +12,6 @@ import mysql.connector
 from datetime import datetime
 
 
-
-
 def get_config():
     appPath = os.path.abspath(os.path.dirname(os.path.join(sys.argv[0])))
     inifile = os.path.dirname(appPath) + "/ini/config.ini"
