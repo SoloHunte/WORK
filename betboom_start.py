@@ -45,6 +45,11 @@ kolGame = 0
 sportActive = {}
 info_liga = {}
 info_gamer = {}
+
+info_koef = {}
+name_kof_skill = {}
+koef_skill = {}
+
 # bk_name = 'betboom_bet'
 #for voc in response.json():
 for voc in data:
@@ -121,21 +126,25 @@ for sportID in sportActive:
                                                     'name_sport': active_sport_name[int(sport_id)], 'link': link,
                                                     'game_id': game_id, 'gamer_info_1': gamer_info_1,
                                                     'gamer_info_2': gamer_info_2, 'period': periodName}
+                        info_koef[id_game_hash] = {'game_id': game_id}
 
-                    # id_game_hash = hashlib.md5(str(gameInfo['Id'])+bk_name)
-                    # print(id_game_hash)
+
 
 print(len(gamerAll))
 print(len(info_liga))
+
 for i in info_liga:
     print(f'{i}->{info_liga[i]}')
     with open('liga_info.csv', 'a', encoding='utf=8') as wr:
         wr.write(f'{i}; {info_liga[i]}\n')
 
-# info_liga[id_liga_hash] = {'liga': liga, 'bk_id_liga': bk_id_liga, 'sport_id': sport_id}
+for i in info_gamer:
+    print(f'{i}->{info_gamer[i]}')
+    with open('liga_gamer.csv', 'a', encoding='utf=8') as wr:
+        wr.write(f'{i}; {info_gamer[i]}\n')
 
-# Значит это больше не нужно!!!!
-# print(gamerAll)
-# for idGame in gamerAll:
-#     link = f'https://sport.betboom.ru/Common/GetEvent?eventId={idGame}&isLive=true&langId=1&partnerId=147' #Получим все коэфы на игру
-#     print(link)
+for i in info_koef:
+    print(f'{i}->{info_koef[i]}')
+    with open('liga_koef.csv', 'a', encoding='utf=8') as wr:
+        wr.write(f'{i}; {info_koef[i]}\n')
+
