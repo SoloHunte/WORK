@@ -85,7 +85,7 @@ for sportID in sportActive:
                                     koefAll += len(koef['Stakes'])
                             print(koefAll)
 
-                            print('-------------------------')
+                            print('-'*50)
                             try:
                                 sportid_my = voc_sports[sportIdThis]
                             except Exception as _erspid:

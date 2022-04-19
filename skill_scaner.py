@@ -14,7 +14,7 @@ from datetime import datetime
 
 def get_config():
     appPath = os.path.abspath(os.path.dirname(os.path.join(sys.argv[0])))
-    inifile = os.path.dirname(appPath) + "/ini/config.ini"
+    inifile = os.path.dirname(appPath) + r"\ini\config.ini"
     return configobj.ConfigObj(inifile)
 
 
