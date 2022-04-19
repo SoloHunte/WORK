@@ -69,7 +69,7 @@ def uid_str(stroka):
 
 def start_session():
     global session
-    session = requests.Session()
+    session = requests.Session() #Тут выдает ошибку AttributeError: 'function' object has no attribute 'get'
 
 
 def close_session():
