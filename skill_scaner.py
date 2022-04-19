@@ -98,7 +98,8 @@ def scaner_data_json(link, headers, timeout, proxies=None):
                     er = False
     except:
         pass
-    data = {'error': er, 'data': d}
+    # data = {'error': er, 'data': d}
+    data = response.json()
     return data
 
 
