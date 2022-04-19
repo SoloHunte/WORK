@@ -57,7 +57,7 @@ gamerAll = {}
 for sportID in sportActive:
     link = f'https://sport.betboom.ru/Live/GetLiveEvents?sportId={sportID}&checkIsActiveAndBetStatus=false&stakeTypes=All&partnerId=147&languageId=1&countryCode=RU&langId=1'
     #Здесь также через сессию из skill_scaner
-    response = skill.start_session.get(link)
+    response = skill.start_session.Session.get(link)
     data = response.json()
     if 'CNT' in data:
         for country in data['CNT']:
