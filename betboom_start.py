@@ -78,6 +78,10 @@ for sportID in sportActive:
                             print(str(gameInfo['Id']))
                             gamer1 = gameInfo['HT']
                             gamer2 = gameInfo['AT']
+                            game_id = gameInfo['Id']
+                            gamer_info_1 = 0
+                            gamer_info_2 = 0
+                            periodName = gameInfo['ES']
                             id_game_hash = hashlib.md5((str(gameInfo['Id'])+bk_name).encode('utf-8')).hexdigest()
                             # print(id_game_hash)
                             # Тут получим все коэфы на игру
@@ -97,7 +101,7 @@ for sportID in sportActive:
                     if sportid_my == 0:
                         continue
                     else:
-                        cur = skill_scaner.connect().cur
+                        cur = skill.connect
                         id_gamer1 = hashlib.md5((str(gamer1)+str(sportid_my)+bk_name).encode('utf-8')).hexdigest()
                         id_gamer2 = hashlib.md5((str(gamer2) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
                         bk_id_gamer1 = hashlib.md5((str(id_gamer1) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
@@ -107,6 +111,7 @@ for sportID in sportActive:
                         started_at = datetime.time
                         score = gameInfo['SS']
                         sport_id = sportid_my
+
                         active_sport_name = skill_scaner.active_sport_names(bk_name)
                         info_liga[id_liga_hash] = {ligaName, sportid_my, bk_id_liga}
                         info_gamer[id_game_hash] = {'bk_name': bk_name, 'id_liga_hash': id_liga_hash,
