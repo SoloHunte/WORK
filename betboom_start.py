@@ -4,7 +4,7 @@ import time
 
 import mysql.connector
 import requests
-#impot skill_scaner
+# impot skill_scaner
 import skill_scaner
 import skill_scaner as skill
 
@@ -24,7 +24,7 @@ headers = {
     'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
     'countryCode': 'RU',
 }
-#Stas
+# Stas
 while skill.connect():
     time.sleep(60)
 cur = skill.cur
@@ -32,14 +32,14 @@ conn = skill.conn
 timeout = 30
 bk_name = 'betboom_ru'
 
-#End Stas
+# End Stas
 voc_sports = {1: 1, 3: 2, 15: 3, 4: 4, 12: 5, 10: 6, 94: 7, 53: 8, 95: 9, 96: 10, 17: 14, 13: 15}
-#session = requests.Session()
+# session = requests.Session()
 skill.start_session()
 
 link = 'https://sport.betboom.ru/Live/Sports?langId=1&partnerId=147&countryCode=RU'
-#Делаем через сессию из skill_scaner
-#response = session.get(link, headers=headers)
+# Делаем через сессию из skill_scaner
+# response = session.get(link, headers=headers)
 data = skill.scaner_data_json(link, headers, timeout)
 kolGame = 0
 sportActive = {}
@@ -51,7 +51,7 @@ name_kof_skill = {}
 koef_skill = {}
 
 # bk_name = 'betboom_bet'
-#for voc in response.json():
+# for voc in response.json():
 for voc in data:
     kolGame += voc['EC']
     sportActive[voc['Id']] = voc['N']
@@ -61,10 +61,10 @@ gamerAll = {}
 
 for sportID in sportActive:
     link = f'https://sport.betboom.ru/Live/GetLiveEvents?sportId={sportID}&checkIsActiveAndBetStatus=false&stakeTypes=All&partnerId=147&languageId=1&countryCode=RU&langId=1'
-    #Здесь также через сессию из skill_scaner
+    # Здесь также через сессию из skill_scaner
     skill.start_session()
-    data = skill.scaner_data_json(link, headers,timeout)
-
+    data = skill.scaner_data_json(link, headers, timeout)
+    bk_id = '19'
     if 'CNT' in data:
         for country in data['CNT']:
             if 'CL' in country:
@@ -87,7 +87,7 @@ for sportID in sportActive:
                             gamer_info_1 = 0
                             gamer_info_2 = 0
                             periodName = gameInfo['ES']
-                            id_game_hash = hashlib.md5((str(gameInfo['Id'])+bk_name).encode('utf-8')).hexdigest()
+                            id_game_hash = hashlib.md5((str(gameInfo['Id']) + bk_name).encode('utf-8')).hexdigest()
                             # print(id_game_hash)
                             # Тут получим все коэфы на игру
                             for koef in koefInfo:
@@ -95,7 +95,7 @@ for sportID in sportActive:
                                     koefAll += len(koef['Stakes'])
                             print(koefAll)
 
-                            print('-'*50)
+                            print('-' * 50)
                             try:
                                 sportid_my = voc_sports[sportIdThis]
                             except Exception as _erspid:
@@ -107,15 +107,17 @@ for sportID in sportActive:
                         continue
                     else:
                         cur = skill.connect
-                        id_gamer1 = hashlib.md5((str(gamer1)+str(sportid_my)+bk_name).encode('utf-8')).hexdigest()
+                        id_gamer1 = hashlib.md5((str(gamer1) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
                         id_gamer2 = hashlib.md5((str(gamer2) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
-                        bk_id_gamer1 = hashlib.md5((str(id_gamer1) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
+                        bk_id_gamer1 = hashlib.md5(
+                            (str(id_gamer1) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
                         bk_id_gamer2 = hashlib.md5(
                             (str(id_gamer2) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
                         time_game = gameInfo['PT']
                         started_at = datetime.time
                         score = gameInfo['SS']
                         sport_id = sportid_my
+
 
                         active_sport_name = skill_scaner.active_sport_names(bk_name)
                         info_liga[id_liga_hash] = {ligaName, sportid_my, bk_id_liga}
@@ -127,8 +129,6 @@ for sportID in sportActive:
                                                     'game_id': game_id, 'gamer_info_1': gamer_info_1,
                                                     'gamer_info_2': gamer_info_2, 'period': periodName}
                         info_koef[id_game_hash] = {'game_id': game_id}
-
-
 
 print(len(gamerAll))
 print(len(info_liga))
@@ -148,3 +148,6 @@ for i in info_koef:
     with open('liga_koef.csv', 'a', encoding='utf=8') as wr:
         wr.write(f'{i}; {info_koef[i]}\n')
 
+skill.add_liga(info_liga, bk_id)
+skill.add_gamer(info_gamer, bk_id, bk_name)
+skill.add_koef(koef_skill, bk_id)
