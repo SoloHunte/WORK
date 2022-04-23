@@ -183,10 +183,11 @@ def add_liga(info_match, bk_id):
         d_sql += "'" + i[0] + "',"
 
     w_sql = ''
+
     for ins in info_match:
-        w_sql += "('" + ins + "', '" + info_match[ins]['liga'].replace("'", "\\'") + "', " + info_match[ins][
-            'sport_id'] + ", " + bk_id + ", " + str(info_match[ins]['bk_id_liga']) + ", 1),"
-        d_sql = d_sql.replace("'" + ins + "',", "")
+        w_sql += "('" + ins + "', '" \
+                 + info_match[ins]['bk_id_liga'].replace("'","\\'") + "', " \
+                 + str(info_match[ins]['sport_Id']) + ", " + bk_id + ", '" + str(info_match[ins]['bk_id_liga']) + "', 1),"
     w_sql = w_sql[0:-1]
     sql = "INSERT INTO liga_info (skill_id, name, sport_id, bk_id, bk_liga_id, live_is) VALUES " + w_sql + \
           " ON DUPLICATE KEY UPDATE name = VALUES(name), sport_id = VALUES(sport_id), bk_id" \
@@ -238,17 +239,7 @@ def add_gamer(info_gamer, bk_id, bk_name):
             continue
 
     i_sql = i_sql[0:-1]
-    sql = "INSERT INTO gamer_info (skill_id, name, bk_id, liga_info, bk_id_gamer) VALUES " + i_sql + "ON DUPLICATE " \
-                                                                                                     "KEY UPDATE name " \
-                                                                                                     "= VALUES(name), " \
-                                                                                                     "bk_id = VALUES(" \
-                                                                                                     "bk_id), " \
-                                                                                                     "liga_info = " \
-                                                                                                     "VALUES(" \
-                                                                                                     "liga_info), " \
-                                                                                                     "bk_id_gamer = " \
-                                                                                                     "VALUES(" \
-                                                                                                     "bk_id_gamer) "
+    sql = "INSERT INTO gamer_info (skill_id, name, bk_id, liga_info, bk_id_gamer) VALUES " + i_sql + "ON DUPLICATE ""KEY UPDATE name ""= VALUES(name), ""bk_id"" = VALUES(bk_id), ""liga_info"" = VALUES(liga_info), ""bk_id_gamer"" = VALUES(bk_id_gamer) "
     query = sql
     cur.execute(query)
     conn.commit()

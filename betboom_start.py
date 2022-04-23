@@ -94,7 +94,6 @@ for sportID in sportActive:
                                 if 'Stakes' in koef:
                                     koefAll += len(koef['Stakes'])
                             print(koefAll)
-
                             print('-' * 50)
                             try:
                                 sportid_my = voc_sports[sportIdThis]
@@ -120,7 +119,7 @@ for sportID in sportActive:
 
 
                         active_sport_name = skill_scaner.active_sport_names(bk_name)
-                        info_liga[id_liga_hash] = {ligaName, sportid_my, bk_id_liga}
+                        info_liga[id_liga_hash] = {'ligaName':ligaName, 'sport_Id':sportid_my, 'bk_id_liga':bk_id_liga}
                         info_gamer[id_game_hash] = {'bk_name': bk_name, 'id_liga_hash': id_liga_hash,
                                                     'bk_id_gamer1': bk_id_gamer1, 'bk_id_gamer2': bk_id_gamer2,
                                                     'gamer1': gamer1, 'gamer2': gamer2, 'time_game': time_game,
@@ -147,6 +146,8 @@ for i in info_koef:
     print(f'{i}->{info_koef[i]}')
     with open('liga_koef.csv', 'a', encoding='utf=8') as wr:
         wr.write(f'{i}; {info_koef[i]}\n')
+
+
 
 skill.add_liga(info_liga, bk_id)
 skill.add_gamer(info_gamer, bk_id, bk_name)
