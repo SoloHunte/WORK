@@ -5833,3 +5833,447 @@ ce8c5d8e26ebeccfb0250189ba4778ff; {'ligaName': 'Мужчины. Катар. Ку
 a469d7916e7e23f1b63ab6b608097af0; {'ligaName': 'NBA 2K. Лига Про. Challenge Tour 4x5min', 'sport_Id': 9, 'bk_id_liga': '9674fc76-6475-4c90-9b30-aea643c4c70d'}
 aeef702b17ac2c19c7277cc7b793dd30; {'ligaName': 'NBA. H2H GG League. 4x5', 'sport_Id': 9, 'bk_id_liga': '7d862f51-5c79-48c0-9a81-886105d992a6'}
 66dcd9a6cd1d3ae76f9c95290b6ad992; {'ligaName': 'Чемпионат Чехии. 1-я лига', 'sport_Id': 14, 'bk_id_liga': '850ef67e-310f-4414-a2c3-06fe11df1151'}
+4c3665fc4e1a5a109aa3fab524e7f82e; {'ligaName': 'Англия. Премьер-лига', 'sport_Id': 1, 'bk_id_liga': 'd3edc161-1b05-4f7c-a376-3c1a072f8ae4'}
+409acca91505c65bedce8ad3d30d8992; {'ligaName': 'Жен. Суперлига Англии', 'sport_Id': 1, 'bk_id_liga': '4b9117a2-ad72-45fe-971d-4badef100eb2'}
+063c1b3438bdea3ea411a9a9e8aa9922; {'ligaName': 'Женщины. Англия. FA Premier', 'sport_Id': 1, 'bk_id_liga': 'ca7d82a7-f33c-4715-82f7-5e9904748926'}
+eef40361333ea491d0e5f7b35fbc07d7; {'ligaName': 'Лига Европы УЕФА', 'sport_Id': 1, 'bk_id_liga': 'a676eb7f-9ff2-4799-bf98-78c0e53123e2'}
+fac8928456c7e42eec4d643218e4fbf1; {'ligaName': 'Лига конференций УЕФА', 'sport_Id': 1, 'bk_id_liga': '8f3b6287-2b54-48fa-b423-0b0e4426f24e'}
+a3057643db8415c1309a20c709da8a24; {'ligaName': 'Аргентина. Резерв', 'sport_Id': 1, 'bk_id_liga': '20ce3829-6faa-424d-8173-c14a1f550a5c'}
+c14bc278fb06891d75e0f1a447061596; {'ligaName': 'Норвегия. Элитсерия', 'sport_Id': 1, 'bk_id_liga': '1f4ef480-0e78-44cf-9c92-2dbed9fcba87'}
+f251680c3d18766825758131fcf2ad35; {'ligaName': 'Норвегия. До 19 лет', 'sport_Id': 1, 'bk_id_liga': 'e364dee0-781e-4b68-aa2b-a5073eabb492'}
+8bf7dfe9a1d5da541a9a5bf38f5abc72; {'ligaName': 'Исландия. Премьер лига', 'sport_Id': 1, 'bk_id_liga': 'e886c9b4-4c35-48fa-90f4-7a2a94aa542e'}
+9f8c21160e95df554c1fa225134d6f0a; {'ligaName': 'Чемпионат Германии. Ландеслига', 'sport_Id': 1, 'bk_id_liga': 'f595e09f-e573-409d-9842-207cd2357681'}
+880c03aad5803a56056274309a631373; {'ligaName': 'Товарищеские матчи. Сборные до 20 лет', 'sport_Id': 1, 'bk_id_liga': '4d009034-5383-4403-984f-d7e330e352c5'}
+29d9d178381227cd83aa31aa48847b41; {'ligaName': 'Испания. Региональная лига', 'sport_Id': 1, 'bk_id_liga': 'b0640fb6-7122-4de4-9366-4927e7162c58'}
+a4bde9724deafbbca7925cacb53125ec; {'ligaName': 'Чемпионат Египта. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '271c25b9-e6f8-4d08-ab33-d63428863683'}
+03cbaa398c183c029f3a14c9b8a2cfc3; {'ligaName': 'Бахрейн. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '2e3d0b8e-8a89-4c60-88f2-c4ad5517f77b'}
+05b9da7b6e10b58e8a559150da265fdf; {'ligaName': 'Катар. Кубок КФА', 'sport_Id': 1, 'bk_id_liga': 'a5f7150b-b550-4186-ad18-faac74319faa'}
+191c9cdb31a887616523d9f1e52433ac; {'ligaName': 'Чемпионат Польши. 4-й дивизион', 'sport_Id': 1, 'bk_id_liga': '73350f44-f7ee-4417-af4a-71df662209cb'}
+83f691a52449f7bf4ec0de7b724517a9; {'ligaName': 'Польша. 1-й дивизион', 'sport_Id': 1, 'bk_id_liga': '0ffe004a-5f63-4246-b974-e6f80db9d988'}
+faf83da1b6678bee38c4c941153d12aa; {'ligaName': 'Чемпионат Швеции. 4-й дивизион', 'sport_Id': 1, 'bk_id_liga': '5ddf96c0-f5e9-47e2-8136-094d53a43c04'}
+870e4377e2dca86cecdd065b714f046e; {'ligaName': 'Чемпионат Либерии', 'sport_Id': 1, 'bk_id_liga': '6673aa9c-2947-4e92-9394-f6392f6c6001'}
+7dec3b30f4badeb4dc70d143f4918e11; {'ligaName': 'Чемпионат Бразилии. Сергипано. До 20 лет', 'sport_Id': 1, 'bk_id_liga': '4f5850e7-97df-4987-866f-f9cf5a53baaa'}
+95cdac1910a39e597c717b693f71af05; {'ligaName': 'Чемпионат С.Аравии. Молодежная лига', 'sport_Id': 1, 'bk_id_liga': '24b26cb1-7c91-4de1-b00c-17772cac1cb1'}
+8617288d1a4e46e5a7597fa78f0b5e2c; {'ligaName': 'Чемпионат Мали', 'sport_Id': 1, 'bk_id_liga': '19a3743a-8f8c-403e-97e4-238dbb5e4c11'}
+3af3336f24446a52cb8ea6d511f95b03; {'ligaName': 'Чемпионат Мексики. TDP', 'sport_Id': 1, 'bk_id_liga': '2a0513af-3aa5-4739-893c-cd4339990b6d'}
+e5ab023721e731d4935bcfa0e97bee25; {'ligaName': 'Чемпионат Иордании', 'sport_Id': 1, 'bk_id_liga': '9b5128f6-91c9-40e5-8c37-ee31bc33f7fe'}
+6e1f3c1ec5181fe9930507429f0bda0d; {'ligaName': 'Чемпионат Мира. Дивизион II', 'sport_Id': 6, 'bk_id_liga': '16543523-25c0-40cd-9f8a-6033a1ef0fc4'}
+e3dcf1ddb7e37814b899271f0cb39c10; {'ligaName': 'Чемпионат Мира. Дивизион I', 'sport_Id': 6, 'bk_id_liga': '3055dd88-cad1-45de-a900-1327542ab345'}
+0390954f9bb3e81d5343b5775e7f14a2; {'ligaName': 'Чемпионат Германии', 'sport_Id': 6, 'bk_id_liga': '9f9cd5b0-5049-4950-b4f1-73f601211574'}
+9c4bfd636f1bf3b4d02a1ea6e3f1eef6; {'ligaName': '3HL. (3 периода по 7 мин. в формате 3x3)', 'sport_Id': 6, 'bk_id_liga': '7471df4f-d749-4ed2-89db-bb741d0debf4'}
+7fafa7923195057e3e0777ce1260559e; {'ligaName': '5HL. (3 периода по 7 мин. в формате 5x5)', 'sport_Id': 6, 'bk_id_liga': '5f0a43fe-49e7-4abf-8b06-7b02957de122'}
+8d3d32fb810f4ffe029bf9044c2d64e1; {'ligaName': 'Израиль. Суперлига', 'sport_Id': 4, 'bk_id_liga': '9966d368-fa2c-4330-a93e-a6309f860a79'}
+07c90e7e109ce7da47d01b2911de5edb; {'ligaName': 'Жен. Италия. Seria A1', 'sport_Id': 4, 'bk_id_liga': '1b6090b4-b5d0-4c10-801b-5e25476887ca'}
+9919ad0b7596adaa3c41301f0db191d6; {'ligaName': 'Франция. Насионал 1', 'sport_Id': 4, 'bk_id_liga': 'e78aea18-9780-479f-9453-b1f7152e0cbe'}
+ffe41c73f846013a0ec51578b8284c40; {'ligaName': 'Жен. Испания. LFB', 'sport_Id': 4, 'bk_id_liga': 'a3e63176-23f2-4110-af91-9a7b3db5712f'}
+5d0da70f94e0f207b7bda5121d4030aa; {'ligaName': 'Женщины. Испания. Региональная лига. До 25 лет', 'sport_Id': 4, 'bk_id_liga': '0ae61566-6aab-482f-8acc-1fe1e4136fb4'}
+9f0b317a22f00cfd4a2d58109784b8db; {'ligaName': 'Великобритания. BBL', 'sport_Id': 4, 'bk_id_liga': 'a9bc3856-6d3b-4e63-b6bb-c852d395f77d'}
+f87755a07cee2478f7b8d29feab41193; {'ligaName': 'Мужчины. Болгарская баскетбольная лига', 'sport_Id': 4, 'bk_id_liga': 'bbced580-fac2-4c07-819d-86f49dc6f2ea'}
+27955a20eefe429321796a0649c714f9; {'ligaName': 'Мужчины. Суперлига Косово', 'sport_Id': 4, 'bk_id_liga': '909a25bd-838f-41c3-bebf-d871d0f0ebe9'}
+5f16b5d7540aa019bb8e1a2eb8c6e34f; {'ligaName': 'Мужчины. Мексика. Liga ABE', 'sport_Id': 4, 'bk_id_liga': '3bbf00c9-6edc-42e6-8275-3b6a244f55d0'}
+786737679199fc4507394949bc2c685c; {'ligaName': 'Женщины. Исландия. Премьер лига', 'sport_Id': 4, 'bk_id_liga': '0e74b0cf-9815-4700-96f7-47671c3dfb5f'}
+53009e4fccba7db33dcd20a970db5d1d; {'ligaName': 'ATP 250. Эшторил. Грунт. Португалия', 'sport_Id': 2, 'bk_id_liga': 'db91be40-a7b5-4ec4-be61-595c0e214699'}
+cf64256c0dd33ab6ed1a91ba4b8ecd64; {'ligaName': 'ATP Challenger. Морелос. Хард. Мексика', 'sport_Id': 2, 'bk_id_liga': 'f755e480-f9fb-46cb-997b-280a29d34a26'}
+8eb1791e0bb9d800d2f0c94baa337d26; {'ligaName': 'ATP Challenger. Саванна. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '4c6b64ef-26f9-45de-bdef-f7246ccd125a'}
+4f103060d1de6f06cc1f821385df01c0; {'ligaName': 'ATP Challenger. Буэнос-Айрес-2. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': 'd0202dd1-81cd-4730-aab2-e29910c2bd82'}
+93001c028f25da07409caf8f24b5fd57; {'ligaName': 'ATP Challenger. Саванна. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '8e707d37-3bb7-4092-a325-a16c3f2f5fc7'}
+574ed3c1ae0efa929283563a72c3488c; {'ligaName': 'ITF. Мужчины. Веро Бич. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '3e33dfe3-27ce-4e9a-885c-d69f5cc8288e'}
+9dcbdee3a4530c27a3e4f815946d67c4; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '777b9961-2029-4f37-8b15-669b2913bd4a'}
+a55ad9df59d1ed56b090fe3548c95771; {'ligaName': 'ITF. Женщины. Сан-Паулу. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': 'e92a4ce0-1721-489b-badd-cd4ae85b477f'}
+bf63a31985cce55cc3a8d90965832cae; {'ligaName': 'Kanaliiga', 'sport_Id': 8, 'bk_id_liga': '75085008-5894-44aa-a65b-7b288aa2ea00'}
+c78d589051c30c80d9d9129692f4c988; {'ligaName': 'BLAST Premier : European Showdown', 'sport_Id': 8, 'bk_id_liga': 'e8f8194c-a00d-46d5-af4b-6f0a8666c825'}
+53cef1ecf07cb2175104b42ffda3f206; {'ligaName': 'ESL Championnat National', 'sport_Id': 8, 'bk_id_liga': 'be42a21c-e672-4d5d-b955-0465d2eca96f'}
+233226ffbd2e6a0803fa06b67ddc07fc; {'ligaName': 'MistGames Heroes of Tomorrow', 'sport_Id': 8, 'bk_id_liga': 'f0cf0b7a-9b5f-4c6c-bb32-a5c06bca5328'}
+b08f0129fdd4ab6784466aec5e66f5a6; {'ligaName': 'ESEA Advanced : Europe', 'sport_Id': 8, 'bk_id_liga': '838b5abd-0733-499f-8515-e1b817bc01b3'}
+b69efdc811e3e87aeb66aa53f4776951; {'ligaName': 'Dota Pro Circuit : Eastern Europe Division I', 'sport_Id': 8, 'bk_id_liga': 'da770178-3c59-4051-b3a5-736ad4b727d3'}
+fd6f23d66f5feb4de6ac16cf4543f991; {'ligaName': 'Dota 2 Champions League', 'sport_Id': 8, 'bk_id_liga': '1eb49c4d-82c0-4041-acd7-eef067510822'}
+db0b39278acef03a29c9369b854bfa1f; {'ligaName': 'D2SL', 'sport_Id': 8, 'bk_id_liga': '8c16acdf-23b8-49e6-8d3a-44b18252bda4'}
+d4e950d515afe12a5ec87471c3aff6b9; {'ligaName': 'BTC Joy Race: NA & SA', 'sport_Id': 8, 'bk_id_liga': '884779bd-4408-4afd-8fc8-90c6515e95d5'}
+a27c5654050711c872955153533ae71c; {'ligaName': 'Италия. Серия А2', 'sport_Id': 5, 'bk_id_liga': '5343c08b-83f0-4487-931b-029bfa967b37'}
+1a45111d37f10d40ff3512e8ea705f3a; {'ligaName': 'Италия. Серия А3', 'sport_Id': 5, 'bk_id_liga': '3e438778-ce7e-48fd-b1e8-88324fde82fd'}
+b6942534a325a788fb0b9d7d7c2ff83a; {'ligaName': 'Турция. Эфелер Лига', 'sport_Id': 5, 'bk_id_liga': '88b47290-1184-4a7b-bc82-af059a71ba8c'}
+0bca72f1b725495050b2d8a90db694eb; {'ligaName': 'Женщины. Чемпионат Германии. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '82d58e45-baf0-4894-8c42-74798a1e0aec'}
+9219fc8679fe3d732098c9ed916acbb8; {'ligaName': 'Венгрия. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '0c8e8f14-6dad-4f78-a0d6-9f7c73835e2e'}
+bc1a39e3a9dfb84a315aaf2658fb7b5a; {'ligaName': 'Мужчины. Чемпионат Греции. 3-я лига', 'sport_Id': 5, 'bk_id_liga': '58188ffe-131a-4e58-8595-072a422d44a2'}
+380a1e06043f2398975cb1e176d63f32; {'ligaName': 'Мужчины. Чемпионат Сев. Македонии. 1-й дивизион', 'sport_Id': 5, 'bk_id_liga': 'd98695f9-bbda-44ae-85a0-c49b966d528e'}
+440771bd35a35f8b5f407f03373ec7d2; {'ligaName': 'Жен. Россия. Лига Про', 'sport_Id': 5, 'bk_id_liga': '7eb46c3b-483c-4062-9bbb-963457677989'}
+d6262093a61b80782e83e97e7e02e9a1; {'ligaName': 'Мужчины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': 'ef1bcc44-5871-4d54-9d26-df149d379918'}
+fc1e62595e2b5102678e001adb34f319; {'ligaName': 'Женшины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': '65dc8dd0-16bf-49af-8507-488197f93cf7'}
+ce8c5d8e26ebeccfb0250189ba4778ff; {'ligaName': 'Мужчины. Катар. Кубок Эмира. Основное время', 'sport_Id': 15, 'bk_id_liga': '16f84b47-2402-4530-adfd-775612816e35'}
+f032bc38d020786b282d5f1775616f8b; {'ligaName': 'Мужчины. Чемпионат Сербии. 2-я лига. Основное время', 'sport_Id': 15, 'bk_id_liga': '8f4eda34-5479-4ce5-857f-9502e4237104'}
+2aa7973d9a499b48a987fdd07f5f26e5; {'ligaName': 'FIFA Battle. Liga Pro. Gold. 12 mins play', 'sport_Id': 7, 'bk_id_liga': '5f32e9ef-b475-4fe2-8ef1-cf1ac643841e'}
+2312b57b238dffbd88232fe3f38163ad; {'ligaName': 'FIFA H2H Liga. 8 mins play', 'sport_Id': 7, 'bk_id_liga': 'df449dd7-c5d8-442a-8f9c-ff243319e898'}
+56bbd270021ab4a79e877d7101652576; {'ligaName': 'FIFA Battle. Night  Europa League. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '02835f9c-21e8-4e18-880b-98dab528d119'}
+a469d7916e7e23f1b63ab6b608097af0; {'ligaName': 'NBA 2K. Лига Про. Challenge Tour 4x5min', 'sport_Id': 9, 'bk_id_liga': '9674fc76-6475-4c90-9b30-aea643c4c70d'}
+aeef702b17ac2c19c7277cc7b793dd30; {'ligaName': 'NBA. H2H GG League. 4x5', 'sport_Id': 9, 'bk_id_liga': '7d862f51-5c79-48c0-9a81-886105d992a6'}
+94c6360f148ee5af9e75f9a52106e276; {'ligaName': 'NHL H2H Liga', 'sport_Id': 10, 'bk_id_liga': 'cc2d8f56-535f-4479-b686-e39c5d686fbb'}
+6a63dc888526665a8f4a076991b5f0bb; {'ligaName': 'NHL Лига Про. Elite', 'sport_Id': 10, 'bk_id_liga': '7471255c-abaa-4d2f-baef-bdb531f7c2f2'}
+66dcd9a6cd1d3ae76f9c95290b6ad992; {'ligaName': 'Чемпионат Чехии. 1-я лига', 'sport_Id': 14, 'bk_id_liga': '850ef67e-310f-4414-a2c3-06fe11df1151'}
+4c3665fc4e1a5a109aa3fab524e7f82e; {'ligaName': 'Англия. Премьер-лига', 'sport_Id': 1, 'bk_id_liga': 'd3edc161-1b05-4f7c-a376-3c1a072f8ae4'}
+409acca91505c65bedce8ad3d30d8992; {'ligaName': 'Жен. Суперлига Англии', 'sport_Id': 1, 'bk_id_liga': '4b9117a2-ad72-45fe-971d-4badef100eb2'}
+063c1b3438bdea3ea411a9a9e8aa9922; {'ligaName': 'Женщины. Англия. FA Premier', 'sport_Id': 1, 'bk_id_liga': 'ca7d82a7-f33c-4715-82f7-5e9904748926'}
+eef40361333ea491d0e5f7b35fbc07d7; {'ligaName': 'Лига Европы УЕФА', 'sport_Id': 1, 'bk_id_liga': 'a676eb7f-9ff2-4799-bf98-78c0e53123e2'}
+fac8928456c7e42eec4d643218e4fbf1; {'ligaName': 'Лига конференций УЕФА', 'sport_Id': 1, 'bk_id_liga': '8f3b6287-2b54-48fa-b423-0b0e4426f24e'}
+a3057643db8415c1309a20c709da8a24; {'ligaName': 'Аргентина. Резерв', 'sport_Id': 1, 'bk_id_liga': '20ce3829-6faa-424d-8173-c14a1f550a5c'}
+c14bc278fb06891d75e0f1a447061596; {'ligaName': 'Норвегия. Элитсерия', 'sport_Id': 1, 'bk_id_liga': '1f4ef480-0e78-44cf-9c92-2dbed9fcba87'}
+f251680c3d18766825758131fcf2ad35; {'ligaName': 'Норвегия. До 19 лет', 'sport_Id': 1, 'bk_id_liga': 'e364dee0-781e-4b68-aa2b-a5073eabb492'}
+8bf7dfe9a1d5da541a9a5bf38f5abc72; {'ligaName': 'Исландия. Премьер лига', 'sport_Id': 1, 'bk_id_liga': 'e886c9b4-4c35-48fa-90f4-7a2a94aa542e'}
+9f8c21160e95df554c1fa225134d6f0a; {'ligaName': 'Чемпионат Германии. Ландеслига', 'sport_Id': 1, 'bk_id_liga': 'f595e09f-e573-409d-9842-207cd2357681'}
+880c03aad5803a56056274309a631373; {'ligaName': 'Товарищеские матчи. Сборные до 20 лет', 'sport_Id': 1, 'bk_id_liga': '4d009034-5383-4403-984f-d7e330e352c5'}
+29d9d178381227cd83aa31aa48847b41; {'ligaName': 'Испания. Региональная лига', 'sport_Id': 1, 'bk_id_liga': 'b0640fb6-7122-4de4-9366-4927e7162c58'}
+a4bde9724deafbbca7925cacb53125ec; {'ligaName': 'Чемпионат Египта. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '271c25b9-e6f8-4d08-ab33-d63428863683'}
+03cbaa398c183c029f3a14c9b8a2cfc3; {'ligaName': 'Бахрейн. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '2e3d0b8e-8a89-4c60-88f2-c4ad5517f77b'}
+05b9da7b6e10b58e8a559150da265fdf; {'ligaName': 'Катар. Кубок КФА', 'sport_Id': 1, 'bk_id_liga': 'a5f7150b-b550-4186-ad18-faac74319faa'}
+191c9cdb31a887616523d9f1e52433ac; {'ligaName': 'Чемпионат Польши. 4-й дивизион', 'sport_Id': 1, 'bk_id_liga': '73350f44-f7ee-4417-af4a-71df662209cb'}
+83f691a52449f7bf4ec0de7b724517a9; {'ligaName': 'Польша. 1-й дивизион', 'sport_Id': 1, 'bk_id_liga': '0ffe004a-5f63-4246-b974-e6f80db9d988'}
+faf83da1b6678bee38c4c941153d12aa; {'ligaName': 'Чемпионат Швеции. 4-й дивизион', 'sport_Id': 1, 'bk_id_liga': '5ddf96c0-f5e9-47e2-8136-094d53a43c04'}
+870e4377e2dca86cecdd065b714f046e; {'ligaName': 'Чемпионат Либерии', 'sport_Id': 1, 'bk_id_liga': '6673aa9c-2947-4e92-9394-f6392f6c6001'}
+7dec3b30f4badeb4dc70d143f4918e11; {'ligaName': 'Чемпионат Бразилии. Сергипано. До 20 лет', 'sport_Id': 1, 'bk_id_liga': '4f5850e7-97df-4987-866f-f9cf5a53baaa'}
+95cdac1910a39e597c717b693f71af05; {'ligaName': 'Чемпионат С.Аравии. Молодежная лига', 'sport_Id': 1, 'bk_id_liga': '24b26cb1-7c91-4de1-b00c-17772cac1cb1'}
+8617288d1a4e46e5a7597fa78f0b5e2c; {'ligaName': 'Чемпионат Мали', 'sport_Id': 1, 'bk_id_liga': '19a3743a-8f8c-403e-97e4-238dbb5e4c11'}
+3af3336f24446a52cb8ea6d511f95b03; {'ligaName': 'Чемпионат Мексики. TDP', 'sport_Id': 1, 'bk_id_liga': '2a0513af-3aa5-4739-893c-cd4339990b6d'}
+e5ab023721e731d4935bcfa0e97bee25; {'ligaName': 'Чемпионат Иордании', 'sport_Id': 1, 'bk_id_liga': '9b5128f6-91c9-40e5-8c37-ee31bc33f7fe'}
+6e1f3c1ec5181fe9930507429f0bda0d; {'ligaName': 'Чемпионат Мира. Дивизион II', 'sport_Id': 6, 'bk_id_liga': '16543523-25c0-40cd-9f8a-6033a1ef0fc4'}
+e3dcf1ddb7e37814b899271f0cb39c10; {'ligaName': 'Чемпионат Мира. Дивизион I', 'sport_Id': 6, 'bk_id_liga': '3055dd88-cad1-45de-a900-1327542ab345'}
+0390954f9bb3e81d5343b5775e7f14a2; {'ligaName': 'Чемпионат Германии', 'sport_Id': 6, 'bk_id_liga': '9f9cd5b0-5049-4950-b4f1-73f601211574'}
+9c4bfd636f1bf3b4d02a1ea6e3f1eef6; {'ligaName': '3HL. (3 периода по 7 мин. в формате 3x3)', 'sport_Id': 6, 'bk_id_liga': '7471df4f-d749-4ed2-89db-bb741d0debf4'}
+7fafa7923195057e3e0777ce1260559e; {'ligaName': '5HL. (3 периода по 7 мин. в формате 5x5)', 'sport_Id': 6, 'bk_id_liga': '5f0a43fe-49e7-4abf-8b06-7b02957de122'}
+8d3d32fb810f4ffe029bf9044c2d64e1; {'ligaName': 'Израиль. Суперлига', 'sport_Id': 4, 'bk_id_liga': '9966d368-fa2c-4330-a93e-a6309f860a79'}
+07c90e7e109ce7da47d01b2911de5edb; {'ligaName': 'Жен. Италия. Seria A1', 'sport_Id': 4, 'bk_id_liga': '1b6090b4-b5d0-4c10-801b-5e25476887ca'}
+9919ad0b7596adaa3c41301f0db191d6; {'ligaName': 'Франция. Насионал 1', 'sport_Id': 4, 'bk_id_liga': 'e78aea18-9780-479f-9453-b1f7152e0cbe'}
+ffe41c73f846013a0ec51578b8284c40; {'ligaName': 'Жен. Испания. LFB', 'sport_Id': 4, 'bk_id_liga': 'a3e63176-23f2-4110-af91-9a7b3db5712f'}
+5d0da70f94e0f207b7bda5121d4030aa; {'ligaName': 'Женщины. Испания. Региональная лига. До 25 лет', 'sport_Id': 4, 'bk_id_liga': '0ae61566-6aab-482f-8acc-1fe1e4136fb4'}
+9f0b317a22f00cfd4a2d58109784b8db; {'ligaName': 'Великобритания. BBL', 'sport_Id': 4, 'bk_id_liga': 'a9bc3856-6d3b-4e63-b6bb-c852d395f77d'}
+f87755a07cee2478f7b8d29feab41193; {'ligaName': 'Мужчины. Болгарская баскетбольная лига', 'sport_Id': 4, 'bk_id_liga': 'bbced580-fac2-4c07-819d-86f49dc6f2ea'}
+27955a20eefe429321796a0649c714f9; {'ligaName': 'Мужчины. Суперлига Косово', 'sport_Id': 4, 'bk_id_liga': '909a25bd-838f-41c3-bebf-d871d0f0ebe9'}
+5f16b5d7540aa019bb8e1a2eb8c6e34f; {'ligaName': 'Мужчины. Мексика. Liga ABE', 'sport_Id': 4, 'bk_id_liga': '3bbf00c9-6edc-42e6-8275-3b6a244f55d0'}
+786737679199fc4507394949bc2c685c; {'ligaName': 'Женщины. Исландия. Премьер лига', 'sport_Id': 4, 'bk_id_liga': '0e74b0cf-9815-4700-96f7-47671c3dfb5f'}
+53009e4fccba7db33dcd20a970db5d1d; {'ligaName': 'ATP 250. Эшторил. Грунт. Португалия', 'sport_Id': 2, 'bk_id_liga': 'db91be40-a7b5-4ec4-be61-595c0e214699'}
+cf64256c0dd33ab6ed1a91ba4b8ecd64; {'ligaName': 'ATP Challenger. Морелос. Хард. Мексика', 'sport_Id': 2, 'bk_id_liga': 'f755e480-f9fb-46cb-997b-280a29d34a26'}
+8eb1791e0bb9d800d2f0c94baa337d26; {'ligaName': 'ATP Challenger. Саванна. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '4c6b64ef-26f9-45de-bdef-f7246ccd125a'}
+93001c028f25da07409caf8f24b5fd57; {'ligaName': 'ATP Challenger. Саванна. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '8e707d37-3bb7-4092-a325-a16c3f2f5fc7'}
+574ed3c1ae0efa929283563a72c3488c; {'ligaName': 'ITF. Мужчины. Веро Бич. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '3e33dfe3-27ce-4e9a-885c-d69f5cc8288e'}
+9dcbdee3a4530c27a3e4f815946d67c4; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '777b9961-2029-4f37-8b15-669b2913bd4a'}
+a55ad9df59d1ed56b090fe3548c95771; {'ligaName': 'ITF. Женщины. Сан-Паулу. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': 'e92a4ce0-1721-489b-badd-cd4ae85b477f'}
+bf63a31985cce55cc3a8d90965832cae; {'ligaName': 'Kanaliiga', 'sport_Id': 8, 'bk_id_liga': '75085008-5894-44aa-a65b-7b288aa2ea00'}
+c78d589051c30c80d9d9129692f4c988; {'ligaName': 'BLAST Premier : European Showdown', 'sport_Id': 8, 'bk_id_liga': 'e8f8194c-a00d-46d5-af4b-6f0a8666c825'}
+53cef1ecf07cb2175104b42ffda3f206; {'ligaName': 'ESL Championnat National', 'sport_Id': 8, 'bk_id_liga': 'be42a21c-e672-4d5d-b955-0465d2eca96f'}
+233226ffbd2e6a0803fa06b67ddc07fc; {'ligaName': 'MistGames Heroes of Tomorrow', 'sport_Id': 8, 'bk_id_liga': 'f0cf0b7a-9b5f-4c6c-bb32-a5c06bca5328'}
+b08f0129fdd4ab6784466aec5e66f5a6; {'ligaName': 'ESEA Advanced : Europe', 'sport_Id': 8, 'bk_id_liga': '838b5abd-0733-499f-8515-e1b817bc01b3'}
+b69efdc811e3e87aeb66aa53f4776951; {'ligaName': 'Dota Pro Circuit : Eastern Europe Division I', 'sport_Id': 8, 'bk_id_liga': 'da770178-3c59-4051-b3a5-736ad4b727d3'}
+fd6f23d66f5feb4de6ac16cf4543f991; {'ligaName': 'Dota 2 Champions League', 'sport_Id': 8, 'bk_id_liga': '1eb49c4d-82c0-4041-acd7-eef067510822'}
+db0b39278acef03a29c9369b854bfa1f; {'ligaName': 'D2SL', 'sport_Id': 8, 'bk_id_liga': '8c16acdf-23b8-49e6-8d3a-44b18252bda4'}
+d4e950d515afe12a5ec87471c3aff6b9; {'ligaName': 'BTC Joy Race: NA & SA', 'sport_Id': 8, 'bk_id_liga': '884779bd-4408-4afd-8fc8-90c6515e95d5'}
+a27c5654050711c872955153533ae71c; {'ligaName': 'Италия. Серия А2', 'sport_Id': 5, 'bk_id_liga': '5343c08b-83f0-4487-931b-029bfa967b37'}
+1a45111d37f10d40ff3512e8ea705f3a; {'ligaName': 'Италия. Серия А3', 'sport_Id': 5, 'bk_id_liga': '3e438778-ce7e-48fd-b1e8-88324fde82fd'}
+b6942534a325a788fb0b9d7d7c2ff83a; {'ligaName': 'Турция. Эфелер Лига', 'sport_Id': 5, 'bk_id_liga': '88b47290-1184-4a7b-bc82-af059a71ba8c'}
+0bca72f1b725495050b2d8a90db694eb; {'ligaName': 'Женщины. Чемпионат Германии. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '82d58e45-baf0-4894-8c42-74798a1e0aec'}
+9219fc8679fe3d732098c9ed916acbb8; {'ligaName': 'Венгрия. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '0c8e8f14-6dad-4f78-a0d6-9f7c73835e2e'}
+bc1a39e3a9dfb84a315aaf2658fb7b5a; {'ligaName': 'Мужчины. Чемпионат Греции. 3-я лига', 'sport_Id': 5, 'bk_id_liga': '58188ffe-131a-4e58-8595-072a422d44a2'}
+380a1e06043f2398975cb1e176d63f32; {'ligaName': 'Мужчины. Чемпионат Сев. Македонии. 1-й дивизион', 'sport_Id': 5, 'bk_id_liga': 'd98695f9-bbda-44ae-85a0-c49b966d528e'}
+440771bd35a35f8b5f407f03373ec7d2; {'ligaName': 'Жен. Россия. Лига Про', 'sport_Id': 5, 'bk_id_liga': '7eb46c3b-483c-4062-9bbb-963457677989'}
+d6262093a61b80782e83e97e7e02e9a1; {'ligaName': 'Мужчины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': 'ef1bcc44-5871-4d54-9d26-df149d379918'}
+fc1e62595e2b5102678e001adb34f319; {'ligaName': 'Женшины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': '65dc8dd0-16bf-49af-8507-488197f93cf7'}
+ce8c5d8e26ebeccfb0250189ba4778ff; {'ligaName': 'Мужчины. Катар. Кубок Эмира. Основное время', 'sport_Id': 15, 'bk_id_liga': '16f84b47-2402-4530-adfd-775612816e35'}
+f032bc38d020786b282d5f1775616f8b; {'ligaName': 'Мужчины. Чемпионат Сербии. 2-я лига. Основное время', 'sport_Id': 15, 'bk_id_liga': '8f4eda34-5479-4ce5-857f-9502e4237104'}
+2aa7973d9a499b48a987fdd07f5f26e5; {'ligaName': 'FIFA Battle. Liga Pro. Gold. 12 mins play', 'sport_Id': 7, 'bk_id_liga': '5f32e9ef-b475-4fe2-8ef1-cf1ac643841e'}
+2312b57b238dffbd88232fe3f38163ad; {'ligaName': 'FIFA H2H Liga. 8 mins play', 'sport_Id': 7, 'bk_id_liga': 'df449dd7-c5d8-442a-8f9c-ff243319e898'}
+56bbd270021ab4a79e877d7101652576; {'ligaName': 'FIFA Battle. Night  Europa League. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '02835f9c-21e8-4e18-880b-98dab528d119'}
+a469d7916e7e23f1b63ab6b608097af0; {'ligaName': 'NBA 2K. Лига Про. Challenge Tour 4x5min', 'sport_Id': 9, 'bk_id_liga': '9674fc76-6475-4c90-9b30-aea643c4c70d'}
+aeef702b17ac2c19c7277cc7b793dd30; {'ligaName': 'NBA. H2H GG League. 4x5', 'sport_Id': 9, 'bk_id_liga': '7d862f51-5c79-48c0-9a81-886105d992a6'}
+94c6360f148ee5af9e75f9a52106e276; {'ligaName': 'NHL H2H Liga', 'sport_Id': 10, 'bk_id_liga': 'cc2d8f56-535f-4479-b686-e39c5d686fbb'}
+6a63dc888526665a8f4a076991b5f0bb; {'ligaName': 'NHL Лига Про. Elite', 'sport_Id': 10, 'bk_id_liga': '7471255c-abaa-4d2f-baef-bdb531f7c2f2'}
+66dcd9a6cd1d3ae76f9c95290b6ad992; {'ligaName': 'Чемпионат Чехии. 1-я лига', 'sport_Id': 14, 'bk_id_liga': '850ef67e-310f-4414-a2c3-06fe11df1151'}
+4c3665fc4e1a5a109aa3fab524e7f82e; {'ligaName': 'Англия. Премьер-лига', 'sport_Id': 1, 'bk_id_liga': 'd3edc161-1b05-4f7c-a376-3c1a072f8ae4'}
+409acca91505c65bedce8ad3d30d8992; {'ligaName': 'Жен. Суперлига Англии', 'sport_Id': 1, 'bk_id_liga': '4b9117a2-ad72-45fe-971d-4badef100eb2'}
+063c1b3438bdea3ea411a9a9e8aa9922; {'ligaName': 'Женщины. Англия. FA Premier', 'sport_Id': 1, 'bk_id_liga': 'ca7d82a7-f33c-4715-82f7-5e9904748926'}
+eef40361333ea491d0e5f7b35fbc07d7; {'ligaName': 'Лига Европы УЕФА', 'sport_Id': 1, 'bk_id_liga': 'a676eb7f-9ff2-4799-bf98-78c0e53123e2'}
+fac8928456c7e42eec4d643218e4fbf1; {'ligaName': 'Лига конференций УЕФА', 'sport_Id': 1, 'bk_id_liga': '8f3b6287-2b54-48fa-b423-0b0e4426f24e'}
+a3057643db8415c1309a20c709da8a24; {'ligaName': 'Аргентина. Резерв', 'sport_Id': 1, 'bk_id_liga': '20ce3829-6faa-424d-8173-c14a1f550a5c'}
+c14bc278fb06891d75e0f1a447061596; {'ligaName': 'Норвегия. Элитсерия', 'sport_Id': 1, 'bk_id_liga': '1f4ef480-0e78-44cf-9c92-2dbed9fcba87'}
+f251680c3d18766825758131fcf2ad35; {'ligaName': 'Норвегия. До 19 лет', 'sport_Id': 1, 'bk_id_liga': 'e364dee0-781e-4b68-aa2b-a5073eabb492'}
+8bf7dfe9a1d5da541a9a5bf38f5abc72; {'ligaName': 'Исландия. Премьер лига', 'sport_Id': 1, 'bk_id_liga': 'e886c9b4-4c35-48fa-90f4-7a2a94aa542e'}
+9f8c21160e95df554c1fa225134d6f0a; {'ligaName': 'Чемпионат Германии. Ландеслига', 'sport_Id': 1, 'bk_id_liga': 'f595e09f-e573-409d-9842-207cd2357681'}
+880c03aad5803a56056274309a631373; {'ligaName': 'Товарищеские матчи. Сборные до 20 лет', 'sport_Id': 1, 'bk_id_liga': '4d009034-5383-4403-984f-d7e330e352c5'}
+29d9d178381227cd83aa31aa48847b41; {'ligaName': 'Испания. Региональная лига', 'sport_Id': 1, 'bk_id_liga': 'b0640fb6-7122-4de4-9366-4927e7162c58'}
+a4bde9724deafbbca7925cacb53125ec; {'ligaName': 'Чемпионат Египта. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '271c25b9-e6f8-4d08-ab33-d63428863683'}
+03cbaa398c183c029f3a14c9b8a2cfc3; {'ligaName': 'Бахрейн. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '2e3d0b8e-8a89-4c60-88f2-c4ad5517f77b'}
+05b9da7b6e10b58e8a559150da265fdf; {'ligaName': 'Катар. Кубок КФА', 'sport_Id': 1, 'bk_id_liga': 'a5f7150b-b550-4186-ad18-faac74319faa'}
+191c9cdb31a887616523d9f1e52433ac; {'ligaName': 'Чемпионат Польши. 4-й дивизион', 'sport_Id': 1, 'bk_id_liga': '73350f44-f7ee-4417-af4a-71df662209cb'}
+83f691a52449f7bf4ec0de7b724517a9; {'ligaName': 'Польша. 1-й дивизион', 'sport_Id': 1, 'bk_id_liga': '0ffe004a-5f63-4246-b974-e6f80db9d988'}
+faf83da1b6678bee38c4c941153d12aa; {'ligaName': 'Чемпионат Швеции. 4-й дивизион', 'sport_Id': 1, 'bk_id_liga': '5ddf96c0-f5e9-47e2-8136-094d53a43c04'}
+870e4377e2dca86cecdd065b714f046e; {'ligaName': 'Чемпионат Либерии', 'sport_Id': 1, 'bk_id_liga': '6673aa9c-2947-4e92-9394-f6392f6c6001'}
+7dec3b30f4badeb4dc70d143f4918e11; {'ligaName': 'Чемпионат Бразилии. Сергипано. До 20 лет', 'sport_Id': 1, 'bk_id_liga': '4f5850e7-97df-4987-866f-f9cf5a53baaa'}
+95cdac1910a39e597c717b693f71af05; {'ligaName': 'Чемпионат С.Аравии. Молодежная лига', 'sport_Id': 1, 'bk_id_liga': '24b26cb1-7c91-4de1-b00c-17772cac1cb1'}
+8617288d1a4e46e5a7597fa78f0b5e2c; {'ligaName': 'Чемпионат Мали', 'sport_Id': 1, 'bk_id_liga': '19a3743a-8f8c-403e-97e4-238dbb5e4c11'}
+3af3336f24446a52cb8ea6d511f95b03; {'ligaName': 'Чемпионат Мексики. TDP', 'sport_Id': 1, 'bk_id_liga': '2a0513af-3aa5-4739-893c-cd4339990b6d'}
+e5ab023721e731d4935bcfa0e97bee25; {'ligaName': 'Чемпионат Иордании', 'sport_Id': 1, 'bk_id_liga': '9b5128f6-91c9-40e5-8c37-ee31bc33f7fe'}
+6e1f3c1ec5181fe9930507429f0bda0d; {'ligaName': 'Чемпионат Мира. Дивизион II', 'sport_Id': 6, 'bk_id_liga': '16543523-25c0-40cd-9f8a-6033a1ef0fc4'}
+e3dcf1ddb7e37814b899271f0cb39c10; {'ligaName': 'Чемпионат Мира. Дивизион I', 'sport_Id': 6, 'bk_id_liga': '3055dd88-cad1-45de-a900-1327542ab345'}
+0390954f9bb3e81d5343b5775e7f14a2; {'ligaName': 'Чемпионат Германии', 'sport_Id': 6, 'bk_id_liga': '9f9cd5b0-5049-4950-b4f1-73f601211574'}
+9c4bfd636f1bf3b4d02a1ea6e3f1eef6; {'ligaName': '3HL. (3 периода по 7 мин. в формате 3x3)', 'sport_Id': 6, 'bk_id_liga': '7471df4f-d749-4ed2-89db-bb741d0debf4'}
+7fafa7923195057e3e0777ce1260559e; {'ligaName': '5HL. (3 периода по 7 мин. в формате 5x5)', 'sport_Id': 6, 'bk_id_liga': '5f0a43fe-49e7-4abf-8b06-7b02957de122'}
+8d3d32fb810f4ffe029bf9044c2d64e1; {'ligaName': 'Израиль. Суперлига', 'sport_Id': 4, 'bk_id_liga': '9966d368-fa2c-4330-a93e-a6309f860a79'}
+07c90e7e109ce7da47d01b2911de5edb; {'ligaName': 'Жен. Италия. Seria A1', 'sport_Id': 4, 'bk_id_liga': '1b6090b4-b5d0-4c10-801b-5e25476887ca'}
+9919ad0b7596adaa3c41301f0db191d6; {'ligaName': 'Франция. Насионал 1', 'sport_Id': 4, 'bk_id_liga': 'e78aea18-9780-479f-9453-b1f7152e0cbe'}
+ffe41c73f846013a0ec51578b8284c40; {'ligaName': 'Жен. Испания. LFB', 'sport_Id': 4, 'bk_id_liga': 'a3e63176-23f2-4110-af91-9a7b3db5712f'}
+5d0da70f94e0f207b7bda5121d4030aa; {'ligaName': 'Женщины. Испания. Региональная лига. До 25 лет', 'sport_Id': 4, 'bk_id_liga': '0ae61566-6aab-482f-8acc-1fe1e4136fb4'}
+9f0b317a22f00cfd4a2d58109784b8db; {'ligaName': 'Великобритания. BBL', 'sport_Id': 4, 'bk_id_liga': 'a9bc3856-6d3b-4e63-b6bb-c852d395f77d'}
+f87755a07cee2478f7b8d29feab41193; {'ligaName': 'Мужчины. Болгарская баскетбольная лига', 'sport_Id': 4, 'bk_id_liga': 'bbced580-fac2-4c07-819d-86f49dc6f2ea'}
+27955a20eefe429321796a0649c714f9; {'ligaName': 'Мужчины. Суперлига Косово', 'sport_Id': 4, 'bk_id_liga': '909a25bd-838f-41c3-bebf-d871d0f0ebe9'}
+5f16b5d7540aa019bb8e1a2eb8c6e34f; {'ligaName': 'Мужчины. Мексика. Liga ABE', 'sport_Id': 4, 'bk_id_liga': '3bbf00c9-6edc-42e6-8275-3b6a244f55d0'}
+786737679199fc4507394949bc2c685c; {'ligaName': 'Женщины. Исландия. Премьер лига', 'sport_Id': 4, 'bk_id_liga': '0e74b0cf-9815-4700-96f7-47671c3dfb5f'}
+53009e4fccba7db33dcd20a970db5d1d; {'ligaName': 'ATP 250. Эшторил. Грунт. Португалия', 'sport_Id': 2, 'bk_id_liga': 'db91be40-a7b5-4ec4-be61-595c0e214699'}
+cf64256c0dd33ab6ed1a91ba4b8ecd64; {'ligaName': 'ATP Challenger. Морелос. Хард. Мексика', 'sport_Id': 2, 'bk_id_liga': 'f755e480-f9fb-46cb-997b-280a29d34a26'}
+8eb1791e0bb9d800d2f0c94baa337d26; {'ligaName': 'ATP Challenger. Саванна. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '4c6b64ef-26f9-45de-bdef-f7246ccd125a'}
+93001c028f25da07409caf8f24b5fd57; {'ligaName': 'ATP Challenger. Саванна. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '8e707d37-3bb7-4092-a325-a16c3f2f5fc7'}
+574ed3c1ae0efa929283563a72c3488c; {'ligaName': 'ITF. Мужчины. Веро Бич. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '3e33dfe3-27ce-4e9a-885c-d69f5cc8288e'}
+9dcbdee3a4530c27a3e4f815946d67c4; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '777b9961-2029-4f37-8b15-669b2913bd4a'}
+a55ad9df59d1ed56b090fe3548c95771; {'ligaName': 'ITF. Женщины. Сан-Паулу. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': 'e92a4ce0-1721-489b-badd-cd4ae85b477f'}
+bf63a31985cce55cc3a8d90965832cae; {'ligaName': 'Kanaliiga', 'sport_Id': 8, 'bk_id_liga': '75085008-5894-44aa-a65b-7b288aa2ea00'}
+c78d589051c30c80d9d9129692f4c988; {'ligaName': 'BLAST Premier : European Showdown', 'sport_Id': 8, 'bk_id_liga': 'e8f8194c-a00d-46d5-af4b-6f0a8666c825'}
+53cef1ecf07cb2175104b42ffda3f206; {'ligaName': 'ESL Championnat National', 'sport_Id': 8, 'bk_id_liga': 'be42a21c-e672-4d5d-b955-0465d2eca96f'}
+233226ffbd2e6a0803fa06b67ddc07fc; {'ligaName': 'MistGames Heroes of Tomorrow', 'sport_Id': 8, 'bk_id_liga': 'f0cf0b7a-9b5f-4c6c-bb32-a5c06bca5328'}
+b08f0129fdd4ab6784466aec5e66f5a6; {'ligaName': 'ESEA Advanced : Europe', 'sport_Id': 8, 'bk_id_liga': '838b5abd-0733-499f-8515-e1b817bc01b3'}
+b69efdc811e3e87aeb66aa53f4776951; {'ligaName': 'Dota Pro Circuit : Eastern Europe Division I', 'sport_Id': 8, 'bk_id_liga': 'da770178-3c59-4051-b3a5-736ad4b727d3'}
+fd6f23d66f5feb4de6ac16cf4543f991; {'ligaName': 'Dota 2 Champions League', 'sport_Id': 8, 'bk_id_liga': '1eb49c4d-82c0-4041-acd7-eef067510822'}
+db0b39278acef03a29c9369b854bfa1f; {'ligaName': 'D2SL', 'sport_Id': 8, 'bk_id_liga': '8c16acdf-23b8-49e6-8d3a-44b18252bda4'}
+d4e950d515afe12a5ec87471c3aff6b9; {'ligaName': 'BTC Joy Race: NA & SA', 'sport_Id': 8, 'bk_id_liga': '884779bd-4408-4afd-8fc8-90c6515e95d5'}
+a27c5654050711c872955153533ae71c; {'ligaName': 'Италия. Серия А2', 'sport_Id': 5, 'bk_id_liga': '5343c08b-83f0-4487-931b-029bfa967b37'}
+1a45111d37f10d40ff3512e8ea705f3a; {'ligaName': 'Италия. Серия А3', 'sport_Id': 5, 'bk_id_liga': '3e438778-ce7e-48fd-b1e8-88324fde82fd'}
+b6942534a325a788fb0b9d7d7c2ff83a; {'ligaName': 'Турция. Эфелер Лига', 'sport_Id': 5, 'bk_id_liga': '88b47290-1184-4a7b-bc82-af059a71ba8c'}
+0bca72f1b725495050b2d8a90db694eb; {'ligaName': 'Женщины. Чемпионат Германии. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '82d58e45-baf0-4894-8c42-74798a1e0aec'}
+9219fc8679fe3d732098c9ed916acbb8; {'ligaName': 'Венгрия. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '0c8e8f14-6dad-4f78-a0d6-9f7c73835e2e'}
+bc1a39e3a9dfb84a315aaf2658fb7b5a; {'ligaName': 'Мужчины. Чемпионат Греции. 3-я лига', 'sport_Id': 5, 'bk_id_liga': '58188ffe-131a-4e58-8595-072a422d44a2'}
+380a1e06043f2398975cb1e176d63f32; {'ligaName': 'Мужчины. Чемпионат Сев. Македонии. 1-й дивизион', 'sport_Id': 5, 'bk_id_liga': 'd98695f9-bbda-44ae-85a0-c49b966d528e'}
+440771bd35a35f8b5f407f03373ec7d2; {'ligaName': 'Жен. Россия. Лига Про', 'sport_Id': 5, 'bk_id_liga': '7eb46c3b-483c-4062-9bbb-963457677989'}
+d6262093a61b80782e83e97e7e02e9a1; {'ligaName': 'Мужчины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': 'ef1bcc44-5871-4d54-9d26-df149d379918'}
+fc1e62595e2b5102678e001adb34f319; {'ligaName': 'Женшины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': '65dc8dd0-16bf-49af-8507-488197f93cf7'}
+ce8c5d8e26ebeccfb0250189ba4778ff; {'ligaName': 'Мужчины. Катар. Кубок Эмира. Основное время', 'sport_Id': 15, 'bk_id_liga': '16f84b47-2402-4530-adfd-775612816e35'}
+f032bc38d020786b282d5f1775616f8b; {'ligaName': 'Мужчины. Чемпионат Сербии. 2-я лига. Основное время', 'sport_Id': 15, 'bk_id_liga': '8f4eda34-5479-4ce5-857f-9502e4237104'}
+2aa7973d9a499b48a987fdd07f5f26e5; {'ligaName': 'FIFA Battle. Liga Pro. Gold. 12 mins play', 'sport_Id': 7, 'bk_id_liga': '5f32e9ef-b475-4fe2-8ef1-cf1ac643841e'}
+2312b57b238dffbd88232fe3f38163ad; {'ligaName': 'FIFA H2H Liga. 8 mins play', 'sport_Id': 7, 'bk_id_liga': 'df449dd7-c5d8-442a-8f9c-ff243319e898'}
+56bbd270021ab4a79e877d7101652576; {'ligaName': 'FIFA Battle. Night  Europa League. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '02835f9c-21e8-4e18-880b-98dab528d119'}
+a469d7916e7e23f1b63ab6b608097af0; {'ligaName': 'NBA 2K. Лига Про. Challenge Tour 4x5min', 'sport_Id': 9, 'bk_id_liga': '9674fc76-6475-4c90-9b30-aea643c4c70d'}
+aeef702b17ac2c19c7277cc7b793dd30; {'ligaName': 'NBA. H2H GG League. 4x5', 'sport_Id': 9, 'bk_id_liga': '7d862f51-5c79-48c0-9a81-886105d992a6'}
+6a63dc888526665a8f4a076991b5f0bb; {'ligaName': 'NHL Лига Про. Elite', 'sport_Id': 10, 'bk_id_liga': '7471255c-abaa-4d2f-baef-bdb531f7c2f2'}
+4c3665fc4e1a5a109aa3fab524e7f82e; {'ligaName': 'Англия. Премьер-лига', 'sport_Id': 1, 'bk_id_liga': 'd3edc161-1b05-4f7c-a376-3c1a072f8ae4'}
+409acca91505c65bedce8ad3d30d8992; {'ligaName': 'Жен. Суперлига Англии', 'sport_Id': 1, 'bk_id_liga': '4b9117a2-ad72-45fe-971d-4badef100eb2'}
+063c1b3438bdea3ea411a9a9e8aa9922; {'ligaName': 'Женщины. Англия. FA Premier', 'sport_Id': 1, 'bk_id_liga': 'ca7d82a7-f33c-4715-82f7-5e9904748926'}
+eef40361333ea491d0e5f7b35fbc07d7; {'ligaName': 'Лига Европы УЕФА', 'sport_Id': 1, 'bk_id_liga': 'a676eb7f-9ff2-4799-bf98-78c0e53123e2'}
+fac8928456c7e42eec4d643218e4fbf1; {'ligaName': 'Лига конференций УЕФА', 'sport_Id': 1, 'bk_id_liga': '8f3b6287-2b54-48fa-b423-0b0e4426f24e'}
+a3057643db8415c1309a20c709da8a24; {'ligaName': 'Аргентина. Резерв', 'sport_Id': 1, 'bk_id_liga': '20ce3829-6faa-424d-8173-c14a1f550a5c'}
+c14bc278fb06891d75e0f1a447061596; {'ligaName': 'Норвегия. Элитсерия', 'sport_Id': 1, 'bk_id_liga': '1f4ef480-0e78-44cf-9c92-2dbed9fcba87'}
+f251680c3d18766825758131fcf2ad35; {'ligaName': 'Норвегия. До 19 лет', 'sport_Id': 1, 'bk_id_liga': 'e364dee0-781e-4b68-aa2b-a5073eabb492'}
+8bf7dfe9a1d5da541a9a5bf38f5abc72; {'ligaName': 'Исландия. Премьер лига', 'sport_Id': 1, 'bk_id_liga': 'e886c9b4-4c35-48fa-90f4-7a2a94aa542e'}
+880c03aad5803a56056274309a631373; {'ligaName': 'Товарищеские матчи. Сборные до 20 лет', 'sport_Id': 1, 'bk_id_liga': '4d009034-5383-4403-984f-d7e330e352c5'}
+29d9d178381227cd83aa31aa48847b41; {'ligaName': 'Испания. Региональная лига', 'sport_Id': 1, 'bk_id_liga': 'b0640fb6-7122-4de4-9366-4927e7162c58'}
+a4bde9724deafbbca7925cacb53125ec; {'ligaName': 'Чемпионат Египта. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '271c25b9-e6f8-4d08-ab33-d63428863683'}
+03cbaa398c183c029f3a14c9b8a2cfc3; {'ligaName': 'Бахрейн. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '2e3d0b8e-8a89-4c60-88f2-c4ad5517f77b'}
+05b9da7b6e10b58e8a559150da265fdf; {'ligaName': 'Катар. Кубок КФА', 'sport_Id': 1, 'bk_id_liga': 'a5f7150b-b550-4186-ad18-faac74319faa'}
+191c9cdb31a887616523d9f1e52433ac; {'ligaName': 'Чемпионат Польши. 4-й дивизион', 'sport_Id': 1, 'bk_id_liga': '73350f44-f7ee-4417-af4a-71df662209cb'}
+83f691a52449f7bf4ec0de7b724517a9; {'ligaName': 'Польша. 1-й дивизион', 'sport_Id': 1, 'bk_id_liga': '0ffe004a-5f63-4246-b974-e6f80db9d988'}
+faf83da1b6678bee38c4c941153d12aa; {'ligaName': 'Чемпионат Швеции. 4-й дивизион', 'sport_Id': 1, 'bk_id_liga': '5ddf96c0-f5e9-47e2-8136-094d53a43c04'}
+870e4377e2dca86cecdd065b714f046e; {'ligaName': 'Чемпионат Либерии', 'sport_Id': 1, 'bk_id_liga': '6673aa9c-2947-4e92-9394-f6392f6c6001'}
+7dec3b30f4badeb4dc70d143f4918e11; {'ligaName': 'Чемпионат Бразилии. Сергипано. До 20 лет', 'sport_Id': 1, 'bk_id_liga': '4f5850e7-97df-4987-866f-f9cf5a53baaa'}
+95cdac1910a39e597c717b693f71af05; {'ligaName': 'Чемпионат С.Аравии. Молодежная лига', 'sport_Id': 1, 'bk_id_liga': '24b26cb1-7c91-4de1-b00c-17772cac1cb1'}
+8617288d1a4e46e5a7597fa78f0b5e2c; {'ligaName': 'Чемпионат Мали', 'sport_Id': 1, 'bk_id_liga': '19a3743a-8f8c-403e-97e4-238dbb5e4c11'}
+3af3336f24446a52cb8ea6d511f95b03; {'ligaName': 'Чемпионат Мексики. TDP', 'sport_Id': 1, 'bk_id_liga': '2a0513af-3aa5-4739-893c-cd4339990b6d'}
+e5ab023721e731d4935bcfa0e97bee25; {'ligaName': 'Чемпионат Иордании', 'sport_Id': 1, 'bk_id_liga': '9b5128f6-91c9-40e5-8c37-ee31bc33f7fe'}
+6e1f3c1ec5181fe9930507429f0bda0d; {'ligaName': 'Чемпионат Мира. Дивизион II', 'sport_Id': 6, 'bk_id_liga': '16543523-25c0-40cd-9f8a-6033a1ef0fc4'}
+e3dcf1ddb7e37814b899271f0cb39c10; {'ligaName': 'Чемпионат Мира. Дивизион I', 'sport_Id': 6, 'bk_id_liga': '3055dd88-cad1-45de-a900-1327542ab345'}
+0390954f9bb3e81d5343b5775e7f14a2; {'ligaName': 'Чемпионат Германии', 'sport_Id': 6, 'bk_id_liga': '9f9cd5b0-5049-4950-b4f1-73f601211574'}
+9c4bfd636f1bf3b4d02a1ea6e3f1eef6; {'ligaName': '3HL. (3 периода по 7 мин. в формате 3x3)', 'sport_Id': 6, 'bk_id_liga': '7471df4f-d749-4ed2-89db-bb741d0debf4'}
+7fafa7923195057e3e0777ce1260559e; {'ligaName': '5HL. (3 периода по 7 мин. в формате 5x5)', 'sport_Id': 6, 'bk_id_liga': '5f0a43fe-49e7-4abf-8b06-7b02957de122'}
+9919ad0b7596adaa3c41301f0db191d6; {'ligaName': 'Франция. Насионал 1', 'sport_Id': 4, 'bk_id_liga': 'e78aea18-9780-479f-9453-b1f7152e0cbe'}
+ffe41c73f846013a0ec51578b8284c40; {'ligaName': 'Жен. Испания. LFB', 'sport_Id': 4, 'bk_id_liga': 'a3e63176-23f2-4110-af91-9a7b3db5712f'}
+5d0da70f94e0f207b7bda5121d4030aa; {'ligaName': 'Женщины. Испания. Региональная лига. До 25 лет', 'sport_Id': 4, 'bk_id_liga': '0ae61566-6aab-482f-8acc-1fe1e4136fb4'}
+9f0b317a22f00cfd4a2d58109784b8db; {'ligaName': 'Великобритания. BBL', 'sport_Id': 4, 'bk_id_liga': 'a9bc3856-6d3b-4e63-b6bb-c852d395f77d'}
+f87755a07cee2478f7b8d29feab41193; {'ligaName': 'Мужчины. Болгарская баскетбольная лига', 'sport_Id': 4, 'bk_id_liga': 'bbced580-fac2-4c07-819d-86f49dc6f2ea'}
+27955a20eefe429321796a0649c714f9; {'ligaName': 'Мужчины. Суперлига Косово', 'sport_Id': 4, 'bk_id_liga': '909a25bd-838f-41c3-bebf-d871d0f0ebe9'}
+5f16b5d7540aa019bb8e1a2eb8c6e34f; {'ligaName': 'Мужчины. Мексика. Liga ABE', 'sport_Id': 4, 'bk_id_liga': '3bbf00c9-6edc-42e6-8275-3b6a244f55d0'}
+786737679199fc4507394949bc2c685c; {'ligaName': 'Женщины. Исландия. Премьер лига', 'sport_Id': 4, 'bk_id_liga': '0e74b0cf-9815-4700-96f7-47671c3dfb5f'}
+53009e4fccba7db33dcd20a970db5d1d; {'ligaName': 'ATP 250. Эшторил. Грунт. Португалия', 'sport_Id': 2, 'bk_id_liga': 'db91be40-a7b5-4ec4-be61-595c0e214699'}
+cf64256c0dd33ab6ed1a91ba4b8ecd64; {'ligaName': 'ATP Challenger. Морелос. Хард. Мексика', 'sport_Id': 2, 'bk_id_liga': 'f755e480-f9fb-46cb-997b-280a29d34a26'}
+8eb1791e0bb9d800d2f0c94baa337d26; {'ligaName': 'ATP Challenger. Саванна. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '4c6b64ef-26f9-45de-bdef-f7246ccd125a'}
+93001c028f25da07409caf8f24b5fd57; {'ligaName': 'ATP Challenger. Саванна. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '8e707d37-3bb7-4092-a325-a16c3f2f5fc7'}
+574ed3c1ae0efa929283563a72c3488c; {'ligaName': 'ITF. Мужчины. Веро Бич. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '3e33dfe3-27ce-4e9a-885c-d69f5cc8288e'}
+9dcbdee3a4530c27a3e4f815946d67c4; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '777b9961-2029-4f37-8b15-669b2913bd4a'}
+a55ad9df59d1ed56b090fe3548c95771; {'ligaName': 'ITF. Женщины. Сан-Паулу. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': 'e92a4ce0-1721-489b-badd-cd4ae85b477f'}
+c78d589051c30c80d9d9129692f4c988; {'ligaName': 'BLAST Premier : European Showdown', 'sport_Id': 8, 'bk_id_liga': 'e8f8194c-a00d-46d5-af4b-6f0a8666c825'}
+53cef1ecf07cb2175104b42ffda3f206; {'ligaName': 'ESL Championnat National', 'sport_Id': 8, 'bk_id_liga': 'be42a21c-e672-4d5d-b955-0465d2eca96f'}
+233226ffbd2e6a0803fa06b67ddc07fc; {'ligaName': 'MistGames Heroes of Tomorrow', 'sport_Id': 8, 'bk_id_liga': 'f0cf0b7a-9b5f-4c6c-bb32-a5c06bca5328'}
+b08f0129fdd4ab6784466aec5e66f5a6; {'ligaName': 'ESEA Advanced : Europe', 'sport_Id': 8, 'bk_id_liga': '838b5abd-0733-499f-8515-e1b817bc01b3'}
+b69efdc811e3e87aeb66aa53f4776951; {'ligaName': 'Dota Pro Circuit : Eastern Europe Division I', 'sport_Id': 8, 'bk_id_liga': 'da770178-3c59-4051-b3a5-736ad4b727d3'}
+db0b39278acef03a29c9369b854bfa1f; {'ligaName': 'D2SL', 'sport_Id': 8, 'bk_id_liga': '8c16acdf-23b8-49e6-8d3a-44b18252bda4'}
+d4e950d515afe12a5ec87471c3aff6b9; {'ligaName': 'BTC Joy Race: NA & SA', 'sport_Id': 8, 'bk_id_liga': '884779bd-4408-4afd-8fc8-90c6515e95d5'}
+a27c5654050711c872955153533ae71c; {'ligaName': 'Италия. Серия А2', 'sport_Id': 5, 'bk_id_liga': '5343c08b-83f0-4487-931b-029bfa967b37'}
+1a45111d37f10d40ff3512e8ea705f3a; {'ligaName': 'Италия. Серия А3', 'sport_Id': 5, 'bk_id_liga': '3e438778-ce7e-48fd-b1e8-88324fde82fd'}
+b6942534a325a788fb0b9d7d7c2ff83a; {'ligaName': 'Турция. Эфелер Лига', 'sport_Id': 5, 'bk_id_liga': '88b47290-1184-4a7b-bc82-af059a71ba8c'}
+0bca72f1b725495050b2d8a90db694eb; {'ligaName': 'Женщины. Чемпионат Германии. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '82d58e45-baf0-4894-8c42-74798a1e0aec'}
+9219fc8679fe3d732098c9ed916acbb8; {'ligaName': 'Венгрия. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '0c8e8f14-6dad-4f78-a0d6-9f7c73835e2e'}
+bc1a39e3a9dfb84a315aaf2658fb7b5a; {'ligaName': 'Мужчины. Чемпионат Греции. 3-я лига', 'sport_Id': 5, 'bk_id_liga': '58188ffe-131a-4e58-8595-072a422d44a2'}
+380a1e06043f2398975cb1e176d63f32; {'ligaName': 'Мужчины. Чемпионат Сев. Македонии. 1-й дивизион', 'sport_Id': 5, 'bk_id_liga': 'd98695f9-bbda-44ae-85a0-c49b966d528e'}
+440771bd35a35f8b5f407f03373ec7d2; {'ligaName': 'Жен. Россия. Лига Про', 'sport_Id': 5, 'bk_id_liga': '7eb46c3b-483c-4062-9bbb-963457677989'}
+d6262093a61b80782e83e97e7e02e9a1; {'ligaName': 'Мужчины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': 'ef1bcc44-5871-4d54-9d26-df149d379918'}
+fc1e62595e2b5102678e001adb34f319; {'ligaName': 'Женшины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': '65dc8dd0-16bf-49af-8507-488197f93cf7'}
+ce8c5d8e26ebeccfb0250189ba4778ff; {'ligaName': 'Мужчины. Катар. Кубок Эмира. Основное время', 'sport_Id': 15, 'bk_id_liga': '16f84b47-2402-4530-adfd-775612816e35'}
+f032bc38d020786b282d5f1775616f8b; {'ligaName': 'Мужчины. Чемпионат Сербии. 2-я лига. Основное время', 'sport_Id': 15, 'bk_id_liga': '8f4eda34-5479-4ce5-857f-9502e4237104'}
+56bbd270021ab4a79e877d7101652576; {'ligaName': 'FIFA Battle. Night  Europa League. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '02835f9c-21e8-4e18-880b-98dab528d119'}
+379a47d7be2fa3460c66025ffc6e30e6; {'ligaName': 'FIFA H2H Liga. Сборные. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '1bbdc6a2-1156-44b9-9111-840c5642c347'}
+fc724ea6fd5734d244b472cfa48ff052; {'ligaName': 'FIFA Battle. Liga Pro. Elite. 12 mins play', 'sport_Id': 7, 'bk_id_liga': 'cf33fcc9-4024-44fe-8796-b97e8c30df0e'}
+aeef702b17ac2c19c7277cc7b793dd30; {'ligaName': 'NBA. H2H GG League. 4x5', 'sport_Id': 9, 'bk_id_liga': '7d862f51-5c79-48c0-9a81-886105d992a6'}
+6a63dc888526665a8f4a076991b5f0bb; {'ligaName': 'NHL Лига Про. Elite', 'sport_Id': 10, 'bk_id_liga': '7471255c-abaa-4d2f-baef-bdb531f7c2f2'}
+94c6360f148ee5af9e75f9a52106e276; {'ligaName': 'NHL H2H Liga', 'sport_Id': 10, 'bk_id_liga': 'cc2d8f56-535f-4479-b686-e39c5d686fbb'}
+4c3665fc4e1a5a109aa3fab524e7f82e; {'ligaName': 'Англия. Премьер-лига', 'sport_Id': 1, 'bk_id_liga': 'd3edc161-1b05-4f7c-a376-3c1a072f8ae4'}
+409acca91505c65bedce8ad3d30d8992; {'ligaName': 'Жен. Суперлига Англии', 'sport_Id': 1, 'bk_id_liga': '4b9117a2-ad72-45fe-971d-4badef100eb2'}
+063c1b3438bdea3ea411a9a9e8aa9922; {'ligaName': 'Женщины. Англия. FA Premier', 'sport_Id': 1, 'bk_id_liga': 'ca7d82a7-f33c-4715-82f7-5e9904748926'}
+eef40361333ea491d0e5f7b35fbc07d7; {'ligaName': 'Лига Европы УЕФА', 'sport_Id': 1, 'bk_id_liga': 'a676eb7f-9ff2-4799-bf98-78c0e53123e2'}
+fac8928456c7e42eec4d643218e4fbf1; {'ligaName': 'Лига конференций УЕФА', 'sport_Id': 1, 'bk_id_liga': '8f3b6287-2b54-48fa-b423-0b0e4426f24e'}
+a3057643db8415c1309a20c709da8a24; {'ligaName': 'Аргентина. Резерв', 'sport_Id': 1, 'bk_id_liga': '20ce3829-6faa-424d-8173-c14a1f550a5c'}
+8bf7dfe9a1d5da541a9a5bf38f5abc72; {'ligaName': 'Исландия. Премьер лига', 'sport_Id': 1, 'bk_id_liga': 'e886c9b4-4c35-48fa-90f4-7a2a94aa542e'}
+880c03aad5803a56056274309a631373; {'ligaName': 'Товарищеские матчи. Сборные до 20 лет', 'sport_Id': 1, 'bk_id_liga': '4d009034-5383-4403-984f-d7e330e352c5'}
+83f691a52449f7bf4ec0de7b724517a9; {'ligaName': 'Польша. 1-й дивизион', 'sport_Id': 1, 'bk_id_liga': '0ffe004a-5f63-4246-b974-e6f80db9d988'}
+29d9d178381227cd83aa31aa48847b41; {'ligaName': 'Испания. Региональная лига', 'sport_Id': 1, 'bk_id_liga': 'b0640fb6-7122-4de4-9366-4927e7162c58'}
+a4bde9724deafbbca7925cacb53125ec; {'ligaName': 'Чемпионат Египта. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '271c25b9-e6f8-4d08-ab33-d63428863683'}
+03cbaa398c183c029f3a14c9b8a2cfc3; {'ligaName': 'Бахрейн. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '2e3d0b8e-8a89-4c60-88f2-c4ad5517f77b'}
+05b9da7b6e10b58e8a559150da265fdf; {'ligaName': 'Катар. Кубок КФА', 'sport_Id': 1, 'bk_id_liga': 'a5f7150b-b550-4186-ad18-faac74319faa'}
+f251680c3d18766825758131fcf2ad35; {'ligaName': 'Норвегия. До 19 лет', 'sport_Id': 1, 'bk_id_liga': 'e364dee0-781e-4b68-aa2b-a5073eabb492'}
+8617288d1a4e46e5a7597fa78f0b5e2c; {'ligaName': 'Чемпионат Мали', 'sport_Id': 1, 'bk_id_liga': '19a3743a-8f8c-403e-97e4-238dbb5e4c11'}
+3af3336f24446a52cb8ea6d511f95b03; {'ligaName': 'Чемпионат Мексики. TDP', 'sport_Id': 1, 'bk_id_liga': '2a0513af-3aa5-4739-893c-cd4339990b6d'}
+e5ab023721e731d4935bcfa0e97bee25; {'ligaName': 'Чемпионат Иордании', 'sport_Id': 1, 'bk_id_liga': '9b5128f6-91c9-40e5-8c37-ee31bc33f7fe'}
+657e3bece2d3e5008ddd331cd4a4bdf3; {'ligaName': 'Жен. Чемпионат Сальвадора', 'sport_Id': 1, 'bk_id_liga': '0953673b-08b3-4916-82f8-399f489d2fda'}
+e3dcf1ddb7e37814b899271f0cb39c10; {'ligaName': 'Чемпионат Мира. Дивизион I', 'sport_Id': 6, 'bk_id_liga': '3055dd88-cad1-45de-a900-1327542ab345'}
+7fafa7923195057e3e0777ce1260559e; {'ligaName': '5HL. (3 периода по 7 мин. в формате 5x5)', 'sport_Id': 6, 'bk_id_liga': '5f0a43fe-49e7-4abf-8b06-7b02957de122'}
+9919ad0b7596adaa3c41301f0db191d6; {'ligaName': 'Франция. Насионал 1', 'sport_Id': 4, 'bk_id_liga': 'e78aea18-9780-479f-9453-b1f7152e0cbe'}
+ffe41c73f846013a0ec51578b8284c40; {'ligaName': 'Жен. Испания. LFB', 'sport_Id': 4, 'bk_id_liga': 'a3e63176-23f2-4110-af91-9a7b3db5712f'}
+5d0da70f94e0f207b7bda5121d4030aa; {'ligaName': 'Женщины. Испания. Региональная лига. До 25 лет', 'sport_Id': 4, 'bk_id_liga': '0ae61566-6aab-482f-8acc-1fe1e4136fb4'}
+9f0b317a22f00cfd4a2d58109784b8db; {'ligaName': 'Великобритания. BBL', 'sport_Id': 4, 'bk_id_liga': 'a9bc3856-6d3b-4e63-b6bb-c852d395f77d'}
+f87755a07cee2478f7b8d29feab41193; {'ligaName': 'Мужчины. Болгарская баскетбольная лига', 'sport_Id': 4, 'bk_id_liga': 'bbced580-fac2-4c07-819d-86f49dc6f2ea'}
+27955a20eefe429321796a0649c714f9; {'ligaName': 'Мужчины. Суперлига Косово', 'sport_Id': 4, 'bk_id_liga': '909a25bd-838f-41c3-bebf-d871d0f0ebe9'}
+5f16b5d7540aa019bb8e1a2eb8c6e34f; {'ligaName': 'Мужчины. Мексика. Liga ABE', 'sport_Id': 4, 'bk_id_liga': '3bbf00c9-6edc-42e6-8275-3b6a244f55d0'}
+786737679199fc4507394949bc2c685c; {'ligaName': 'Женщины. Исландия. Премьер лига', 'sport_Id': 4, 'bk_id_liga': '0e74b0cf-9815-4700-96f7-47671c3dfb5f'}
+53009e4fccba7db33dcd20a970db5d1d; {'ligaName': 'ATP 250. Эшторил. Грунт. Португалия', 'sport_Id': 2, 'bk_id_liga': 'db91be40-a7b5-4ec4-be61-595c0e214699'}
+cf64256c0dd33ab6ed1a91ba4b8ecd64; {'ligaName': 'ATP Challenger. Морелос. Хард. Мексика', 'sport_Id': 2, 'bk_id_liga': 'f755e480-f9fb-46cb-997b-280a29d34a26'}
+93001c028f25da07409caf8f24b5fd57; {'ligaName': 'ATP Challenger. Саванна. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '8e707d37-3bb7-4092-a325-a16c3f2f5fc7'}
+5ea4e8542b9361b8fc5d88e3e23e20b2; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '0d2243d4-1c97-4473-99d6-701787a57d0d'}
+574ed3c1ae0efa929283563a72c3488c; {'ligaName': 'ITF. Мужчины. Веро Бич. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '3e33dfe3-27ce-4e9a-885c-d69f5cc8288e'}
+9dcbdee3a4530c27a3e4f815946d67c4; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '777b9961-2029-4f37-8b15-669b2913bd4a'}
+c78d589051c30c80d9d9129692f4c988; {'ligaName': 'BLAST Premier : European Showdown', 'sport_Id': 8, 'bk_id_liga': 'e8f8194c-a00d-46d5-af4b-6f0a8666c825'}
+233226ffbd2e6a0803fa06b67ddc07fc; {'ligaName': 'MistGames Heroes of Tomorrow', 'sport_Id': 8, 'bk_id_liga': 'f0cf0b7a-9b5f-4c6c-bb32-a5c06bca5328'}
+b69efdc811e3e87aeb66aa53f4776951; {'ligaName': 'Dota Pro Circuit : Eastern Europe Division I', 'sport_Id': 8, 'bk_id_liga': 'da770178-3c59-4051-b3a5-736ad4b727d3'}
+db0b39278acef03a29c9369b854bfa1f; {'ligaName': 'D2SL', 'sport_Id': 8, 'bk_id_liga': '8c16acdf-23b8-49e6-8d3a-44b18252bda4'}
+d4e950d515afe12a5ec87471c3aff6b9; {'ligaName': 'BTC Joy Race: NA & SA', 'sport_Id': 8, 'bk_id_liga': '884779bd-4408-4afd-8fc8-90c6515e95d5'}
+1a45111d37f10d40ff3512e8ea705f3a; {'ligaName': 'Италия. Серия А3', 'sport_Id': 5, 'bk_id_liga': '3e438778-ce7e-48fd-b1e8-88324fde82fd'}
+9219fc8679fe3d732098c9ed916acbb8; {'ligaName': 'Венгрия. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '0c8e8f14-6dad-4f78-a0d6-9f7c73835e2e'}
+380a1e06043f2398975cb1e176d63f32; {'ligaName': 'Мужчины. Чемпионат Сев. Македонии. 1-й дивизион', 'sport_Id': 5, 'bk_id_liga': 'd98695f9-bbda-44ae-85a0-c49b966d528e'}
+440771bd35a35f8b5f407f03373ec7d2; {'ligaName': 'Жен. Россия. Лига Про', 'sport_Id': 5, 'bk_id_liga': '7eb46c3b-483c-4062-9bbb-963457677989'}
+d6262093a61b80782e83e97e7e02e9a1; {'ligaName': 'Мужчины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': 'ef1bcc44-5871-4d54-9d26-df149d379918'}
+fc1e62595e2b5102678e001adb34f319; {'ligaName': 'Женшины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': '65dc8dd0-16bf-49af-8507-488197f93cf7'}
+ce8c5d8e26ebeccfb0250189ba4778ff; {'ligaName': 'Мужчины. Катар. Кубок Эмира. Основное время', 'sport_Id': 15, 'bk_id_liga': '16f84b47-2402-4530-adfd-775612816e35'}
+f032bc38d020786b282d5f1775616f8b; {'ligaName': 'Мужчины. Чемпионат Сербии. 2-я лига. Основное время', 'sport_Id': 15, 'bk_id_liga': '8f4eda34-5479-4ce5-857f-9502e4237104'}
+379a47d7be2fa3460c66025ffc6e30e6; {'ligaName': 'FIFA H2H Liga. Сборные. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '1bbdc6a2-1156-44b9-9111-840c5642c347'}
+56bbd270021ab4a79e877d7101652576; {'ligaName': 'FIFA Battle. Night  Europa League. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '02835f9c-21e8-4e18-880b-98dab528d119'}
+aeef702b17ac2c19c7277cc7b793dd30; {'ligaName': 'NBA. H2H GG League. 4x5', 'sport_Id': 9, 'bk_id_liga': '7d862f51-5c79-48c0-9a81-886105d992a6'}
+a469d7916e7e23f1b63ab6b608097af0; {'ligaName': 'NBA 2K. Лига Про. Challenge Tour 4x5min', 'sport_Id': 9, 'bk_id_liga': '9674fc76-6475-4c90-9b30-aea643c4c70d'}
+4c3665fc4e1a5a109aa3fab524e7f82e; {'ligaName': 'Англия. Премьер-лига', 'sport_Id': 1, 'bk_id_liga': 'd3edc161-1b05-4f7c-a376-3c1a072f8ae4'}
+409acca91505c65bedce8ad3d30d8992; {'ligaName': 'Жен. Суперлига Англии', 'sport_Id': 1, 'bk_id_liga': '4b9117a2-ad72-45fe-971d-4badef100eb2'}
+063c1b3438bdea3ea411a9a9e8aa9922; {'ligaName': 'Женщины. Англия. FA Premier', 'sport_Id': 1, 'bk_id_liga': 'ca7d82a7-f33c-4715-82f7-5e9904748926'}
+eef40361333ea491d0e5f7b35fbc07d7; {'ligaName': 'Лига Европы УЕФА', 'sport_Id': 1, 'bk_id_liga': 'a676eb7f-9ff2-4799-bf98-78c0e53123e2'}
+fac8928456c7e42eec4d643218e4fbf1; {'ligaName': 'Лига конференций УЕФА', 'sport_Id': 1, 'bk_id_liga': '8f3b6287-2b54-48fa-b423-0b0e4426f24e'}
+a3057643db8415c1309a20c709da8a24; {'ligaName': 'Аргентина. Резерв', 'sport_Id': 1, 'bk_id_liga': '20ce3829-6faa-424d-8173-c14a1f550a5c'}
+8bf7dfe9a1d5da541a9a5bf38f5abc72; {'ligaName': 'Исландия. Премьер лига', 'sport_Id': 1, 'bk_id_liga': 'e886c9b4-4c35-48fa-90f4-7a2a94aa542e'}
+880c03aad5803a56056274309a631373; {'ligaName': 'Товарищеские матчи. Сборные до 20 лет', 'sport_Id': 1, 'bk_id_liga': '4d009034-5383-4403-984f-d7e330e352c5'}
+83f691a52449f7bf4ec0de7b724517a9; {'ligaName': 'Польша. 1-й дивизион', 'sport_Id': 1, 'bk_id_liga': '0ffe004a-5f63-4246-b974-e6f80db9d988'}
+29d9d178381227cd83aa31aa48847b41; {'ligaName': 'Испания. Региональная лига', 'sport_Id': 1, 'bk_id_liga': 'b0640fb6-7122-4de4-9366-4927e7162c58'}
+a4bde9724deafbbca7925cacb53125ec; {'ligaName': 'Чемпионат Египта. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '271c25b9-e6f8-4d08-ab33-d63428863683'}
+03cbaa398c183c029f3a14c9b8a2cfc3; {'ligaName': 'Бахрейн. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '2e3d0b8e-8a89-4c60-88f2-c4ad5517f77b'}
+05b9da7b6e10b58e8a559150da265fdf; {'ligaName': 'Катар. Кубок КФА', 'sport_Id': 1, 'bk_id_liga': 'a5f7150b-b550-4186-ad18-faac74319faa'}
+8617288d1a4e46e5a7597fa78f0b5e2c; {'ligaName': 'Чемпионат Мали', 'sport_Id': 1, 'bk_id_liga': '19a3743a-8f8c-403e-97e4-238dbb5e4c11'}
+3af3336f24446a52cb8ea6d511f95b03; {'ligaName': 'Чемпионат Мексики. TDP', 'sport_Id': 1, 'bk_id_liga': '2a0513af-3aa5-4739-893c-cd4339990b6d'}
+e5ab023721e731d4935bcfa0e97bee25; {'ligaName': 'Чемпионат Иордании', 'sport_Id': 1, 'bk_id_liga': '9b5128f6-91c9-40e5-8c37-ee31bc33f7fe'}
+657e3bece2d3e5008ddd331cd4a4bdf3; {'ligaName': 'Жен. Чемпионат Сальвадора', 'sport_Id': 1, 'bk_id_liga': '0953673b-08b3-4916-82f8-399f489d2fda'}
+e3dcf1ddb7e37814b899271f0cb39c10; {'ligaName': 'Чемпионат Мира. Дивизион I', 'sport_Id': 6, 'bk_id_liga': '3055dd88-cad1-45de-a900-1327542ab345'}
+7fafa7923195057e3e0777ce1260559e; {'ligaName': '5HL. (3 периода по 7 мин. в формате 5x5)', 'sport_Id': 6, 'bk_id_liga': '5f0a43fe-49e7-4abf-8b06-7b02957de122'}
+9919ad0b7596adaa3c41301f0db191d6; {'ligaName': 'Франция. Насионал 1', 'sport_Id': 4, 'bk_id_liga': 'e78aea18-9780-479f-9453-b1f7152e0cbe'}
+9f0b317a22f00cfd4a2d58109784b8db; {'ligaName': 'Великобритания. BBL', 'sport_Id': 4, 'bk_id_liga': 'a9bc3856-6d3b-4e63-b6bb-c852d395f77d'}
+ffe41c73f846013a0ec51578b8284c40; {'ligaName': 'Жен. Испания. LFB', 'sport_Id': 4, 'bk_id_liga': 'a3e63176-23f2-4110-af91-9a7b3db5712f'}
+5d0da70f94e0f207b7bda5121d4030aa; {'ligaName': 'Женщины. Испания. Региональная лига. До 25 лет', 'sport_Id': 4, 'bk_id_liga': '0ae61566-6aab-482f-8acc-1fe1e4136fb4'}
+27955a20eefe429321796a0649c714f9; {'ligaName': 'Мужчины. Суперлига Косово', 'sport_Id': 4, 'bk_id_liga': '909a25bd-838f-41c3-bebf-d871d0f0ebe9'}
+5f16b5d7540aa019bb8e1a2eb8c6e34f; {'ligaName': 'Мужчины. Мексика. Liga ABE', 'sport_Id': 4, 'bk_id_liga': '3bbf00c9-6edc-42e6-8275-3b6a244f55d0'}
+786737679199fc4507394949bc2c685c; {'ligaName': 'Женщины. Исландия. Премьер лига', 'sport_Id': 4, 'bk_id_liga': '0e74b0cf-9815-4700-96f7-47671c3dfb5f'}
+53009e4fccba7db33dcd20a970db5d1d; {'ligaName': 'ATP 250. Эшторил. Грунт. Португалия', 'sport_Id': 2, 'bk_id_liga': 'db91be40-a7b5-4ec4-be61-595c0e214699'}
+cf64256c0dd33ab6ed1a91ba4b8ecd64; {'ligaName': 'ATP Challenger. Морелос. Хард. Мексика', 'sport_Id': 2, 'bk_id_liga': 'f755e480-f9fb-46cb-997b-280a29d34a26'}
+93001c028f25da07409caf8f24b5fd57; {'ligaName': 'ATP Challenger. Саванна. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '8e707d37-3bb7-4092-a325-a16c3f2f5fc7'}
+5ea4e8542b9361b8fc5d88e3e23e20b2; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '0d2243d4-1c97-4473-99d6-701787a57d0d'}
+574ed3c1ae0efa929283563a72c3488c; {'ligaName': 'ITF. Мужчины. Веро Бич. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '3e33dfe3-27ce-4e9a-885c-d69f5cc8288e'}
+9dcbdee3a4530c27a3e4f815946d67c4; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '777b9961-2029-4f37-8b15-669b2913bd4a'}
+c78d589051c30c80d9d9129692f4c988; {'ligaName': 'BLAST Premier : European Showdown', 'sport_Id': 8, 'bk_id_liga': 'e8f8194c-a00d-46d5-af4b-6f0a8666c825'}
+233226ffbd2e6a0803fa06b67ddc07fc; {'ligaName': 'MistGames Heroes of Tomorrow', 'sport_Id': 8, 'bk_id_liga': 'f0cf0b7a-9b5f-4c6c-bb32-a5c06bca5328'}
+b69efdc811e3e87aeb66aa53f4776951; {'ligaName': 'Dota Pro Circuit : Eastern Europe Division I', 'sport_Id': 8, 'bk_id_liga': 'da770178-3c59-4051-b3a5-736ad4b727d3'}
+db0b39278acef03a29c9369b854bfa1f; {'ligaName': 'D2SL', 'sport_Id': 8, 'bk_id_liga': '8c16acdf-23b8-49e6-8d3a-44b18252bda4'}
+d4e950d515afe12a5ec87471c3aff6b9; {'ligaName': 'BTC Joy Race: NA & SA', 'sport_Id': 8, 'bk_id_liga': '884779bd-4408-4afd-8fc8-90c6515e95d5'}
+1a45111d37f10d40ff3512e8ea705f3a; {'ligaName': 'Италия. Серия А3', 'sport_Id': 5, 'bk_id_liga': '3e438778-ce7e-48fd-b1e8-88324fde82fd'}
+9219fc8679fe3d732098c9ed916acbb8; {'ligaName': 'Венгрия. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '0c8e8f14-6dad-4f78-a0d6-9f7c73835e2e'}
+380a1e06043f2398975cb1e176d63f32; {'ligaName': 'Мужчины. Чемпионат Сев. Македонии. 1-й дивизион', 'sport_Id': 5, 'bk_id_liga': 'd98695f9-bbda-44ae-85a0-c49b966d528e'}
+440771bd35a35f8b5f407f03373ec7d2; {'ligaName': 'Жен. Россия. Лига Про', 'sport_Id': 5, 'bk_id_liga': '7eb46c3b-483c-4062-9bbb-963457677989'}
+d6262093a61b80782e83e97e7e02e9a1; {'ligaName': 'Мужчины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': 'ef1bcc44-5871-4d54-9d26-df149d379918'}
+fc1e62595e2b5102678e001adb34f319; {'ligaName': 'Женшины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': '65dc8dd0-16bf-49af-8507-488197f93cf7'}
+ce8c5d8e26ebeccfb0250189ba4778ff; {'ligaName': 'Мужчины. Катар. Кубок Эмира. Основное время', 'sport_Id': 15, 'bk_id_liga': '16f84b47-2402-4530-adfd-775612816e35'}
+f032bc38d020786b282d5f1775616f8b; {'ligaName': 'Мужчины. Чемпионат Сербии. 2-я лига. Основное время', 'sport_Id': 15, 'bk_id_liga': '8f4eda34-5479-4ce5-857f-9502e4237104'}
+379a47d7be2fa3460c66025ffc6e30e6; {'ligaName': 'FIFA H2H Liga. Сборные. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '1bbdc6a2-1156-44b9-9111-840c5642c347'}
+56bbd270021ab4a79e877d7101652576; {'ligaName': 'FIFA Battle. Night  Europa League. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '02835f9c-21e8-4e18-880b-98dab528d119'}
+2312b57b238dffbd88232fe3f38163ad; {'ligaName': 'FIFA H2H Liga. 8 mins play', 'sport_Id': 7, 'bk_id_liga': 'df449dd7-c5d8-442a-8f9c-ff243319e898'}
+aeef702b17ac2c19c7277cc7b793dd30; {'ligaName': 'NBA. H2H GG League. 4x5', 'sport_Id': 9, 'bk_id_liga': '7d862f51-5c79-48c0-9a81-886105d992a6'}
+a469d7916e7e23f1b63ab6b608097af0; {'ligaName': 'NBA 2K. Лига Про. Challenge Tour 4x5min', 'sport_Id': 9, 'bk_id_liga': '9674fc76-6475-4c90-9b30-aea643c4c70d'}
+4c3665fc4e1a5a109aa3fab524e7f82e; {'ligaName': 'Англия. Премьер-лига', 'sport_Id': 1, 'bk_id_liga': 'd3edc161-1b05-4f7c-a376-3c1a072f8ae4'}
+409acca91505c65bedce8ad3d30d8992; {'ligaName': 'Жен. Суперлига Англии', 'sport_Id': 1, 'bk_id_liga': '4b9117a2-ad72-45fe-971d-4badef100eb2'}
+063c1b3438bdea3ea411a9a9e8aa9922; {'ligaName': 'Женщины. Англия. FA Premier', 'sport_Id': 1, 'bk_id_liga': 'ca7d82a7-f33c-4715-82f7-5e9904748926'}
+eef40361333ea491d0e5f7b35fbc07d7; {'ligaName': 'Лига Европы УЕФА', 'sport_Id': 1, 'bk_id_liga': 'a676eb7f-9ff2-4799-bf98-78c0e53123e2'}
+fac8928456c7e42eec4d643218e4fbf1; {'ligaName': 'Лига конференций УЕФА', 'sport_Id': 1, 'bk_id_liga': '8f3b6287-2b54-48fa-b423-0b0e4426f24e'}
+a3057643db8415c1309a20c709da8a24; {'ligaName': 'Аргентина. Резерв', 'sport_Id': 1, 'bk_id_liga': '20ce3829-6faa-424d-8173-c14a1f550a5c'}
+8bf7dfe9a1d5da541a9a5bf38f5abc72; {'ligaName': 'Исландия. Премьер лига', 'sport_Id': 1, 'bk_id_liga': 'e886c9b4-4c35-48fa-90f4-7a2a94aa542e'}
+880c03aad5803a56056274309a631373; {'ligaName': 'Товарищеские матчи. Сборные до 20 лет', 'sport_Id': 1, 'bk_id_liga': '4d009034-5383-4403-984f-d7e330e352c5'}
+83f691a52449f7bf4ec0de7b724517a9; {'ligaName': 'Польша. 1-й дивизион', 'sport_Id': 1, 'bk_id_liga': '0ffe004a-5f63-4246-b974-e6f80db9d988'}
+29d9d178381227cd83aa31aa48847b41; {'ligaName': 'Испания. Региональная лига', 'sport_Id': 1, 'bk_id_liga': 'b0640fb6-7122-4de4-9366-4927e7162c58'}
+a4bde9724deafbbca7925cacb53125ec; {'ligaName': 'Чемпионат Египта. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '271c25b9-e6f8-4d08-ab33-d63428863683'}
+03cbaa398c183c029f3a14c9b8a2cfc3; {'ligaName': 'Бахрейн. Премьер лига', 'sport_Id': 1, 'bk_id_liga': '2e3d0b8e-8a89-4c60-88f2-c4ad5517f77b'}
+05b9da7b6e10b58e8a559150da265fdf; {'ligaName': 'Катар. Кубок КФА', 'sport_Id': 1, 'bk_id_liga': 'a5f7150b-b550-4186-ad18-faac74319faa'}
+8617288d1a4e46e5a7597fa78f0b5e2c; {'ligaName': 'Чемпионат Мали', 'sport_Id': 1, 'bk_id_liga': '19a3743a-8f8c-403e-97e4-238dbb5e4c11'}
+3af3336f24446a52cb8ea6d511f95b03; {'ligaName': 'Чемпионат Мексики. TDP', 'sport_Id': 1, 'bk_id_liga': '2a0513af-3aa5-4739-893c-cd4339990b6d'}
+e5ab023721e731d4935bcfa0e97bee25; {'ligaName': 'Чемпионат Иордании', 'sport_Id': 1, 'bk_id_liga': '9b5128f6-91c9-40e5-8c37-ee31bc33f7fe'}
+657e3bece2d3e5008ddd331cd4a4bdf3; {'ligaName': 'Жен. Чемпионат Сальвадора', 'sport_Id': 1, 'bk_id_liga': '0953673b-08b3-4916-82f8-399f489d2fda'}
+e3dcf1ddb7e37814b899271f0cb39c10; {'ligaName': 'Чемпионат Мира. Дивизион I', 'sport_Id': 6, 'bk_id_liga': '3055dd88-cad1-45de-a900-1327542ab345'}
+7fafa7923195057e3e0777ce1260559e; {'ligaName': '5HL. (3 периода по 7 мин. в формате 5x5)', 'sport_Id': 6, 'bk_id_liga': '5f0a43fe-49e7-4abf-8b06-7b02957de122'}
+9919ad0b7596adaa3c41301f0db191d6; {'ligaName': 'Франция. Насионал 1', 'sport_Id': 4, 'bk_id_liga': 'e78aea18-9780-479f-9453-b1f7152e0cbe'}
+9f0b317a22f00cfd4a2d58109784b8db; {'ligaName': 'Великобритания. BBL', 'sport_Id': 4, 'bk_id_liga': 'a9bc3856-6d3b-4e63-b6bb-c852d395f77d'}
+ffe41c73f846013a0ec51578b8284c40; {'ligaName': 'Жен. Испания. LFB', 'sport_Id': 4, 'bk_id_liga': 'a3e63176-23f2-4110-af91-9a7b3db5712f'}
+5d0da70f94e0f207b7bda5121d4030aa; {'ligaName': 'Женщины. Испания. Региональная лига. До 25 лет', 'sport_Id': 4, 'bk_id_liga': '0ae61566-6aab-482f-8acc-1fe1e4136fb4'}
+27955a20eefe429321796a0649c714f9; {'ligaName': 'Мужчины. Суперлига Косово', 'sport_Id': 4, 'bk_id_liga': '909a25bd-838f-41c3-bebf-d871d0f0ebe9'}
+5f16b5d7540aa019bb8e1a2eb8c6e34f; {'ligaName': 'Мужчины. Мексика. Liga ABE', 'sport_Id': 4, 'bk_id_liga': '3bbf00c9-6edc-42e6-8275-3b6a244f55d0'}
+786737679199fc4507394949bc2c685c; {'ligaName': 'Женщины. Исландия. Премьер лига', 'sport_Id': 4, 'bk_id_liga': '0e74b0cf-9815-4700-96f7-47671c3dfb5f'}
+53009e4fccba7db33dcd20a970db5d1d; {'ligaName': 'ATP 250. Эшторил. Грунт. Португалия', 'sport_Id': 2, 'bk_id_liga': 'db91be40-a7b5-4ec4-be61-595c0e214699'}
+cf64256c0dd33ab6ed1a91ba4b8ecd64; {'ligaName': 'ATP Challenger. Морелос. Хард. Мексика', 'sport_Id': 2, 'bk_id_liga': 'f755e480-f9fb-46cb-997b-280a29d34a26'}
+93001c028f25da07409caf8f24b5fd57; {'ligaName': 'ATP Challenger. Саванна. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '8e707d37-3bb7-4092-a325-a16c3f2f5fc7'}
+5ea4e8542b9361b8fc5d88e3e23e20b2; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '0d2243d4-1c97-4473-99d6-701787a57d0d'}
+574ed3c1ae0efa929283563a72c3488c; {'ligaName': 'ITF. Мужчины. Веро Бич. Грунт. США', 'sport_Id': 2, 'bk_id_liga': '3e33dfe3-27ce-4e9a-885c-d69f5cc8288e'}
+9dcbdee3a4530c27a3e4f815946d67c4; {'ligaName': 'ITF. Женщины. Чарлстон. Грунт. Пары', 'sport_Id': 2, 'bk_id_liga': '777b9961-2029-4f37-8b15-669b2913bd4a'}
+c78d589051c30c80d9d9129692f4c988; {'ligaName': 'BLAST Premier : European Showdown', 'sport_Id': 8, 'bk_id_liga': 'e8f8194c-a00d-46d5-af4b-6f0a8666c825'}
+233226ffbd2e6a0803fa06b67ddc07fc; {'ligaName': 'MistGames Heroes of Tomorrow', 'sport_Id': 8, 'bk_id_liga': 'f0cf0b7a-9b5f-4c6c-bb32-a5c06bca5328'}
+b69efdc811e3e87aeb66aa53f4776951; {'ligaName': 'Dota Pro Circuit : Eastern Europe Division I', 'sport_Id': 8, 'bk_id_liga': 'da770178-3c59-4051-b3a5-736ad4b727d3'}
+db0b39278acef03a29c9369b854bfa1f; {'ligaName': 'D2SL', 'sport_Id': 8, 'bk_id_liga': '8c16acdf-23b8-49e6-8d3a-44b18252bda4'}
+d4e950d515afe12a5ec87471c3aff6b9; {'ligaName': 'BTC Joy Race: NA & SA', 'sport_Id': 8, 'bk_id_liga': '884779bd-4408-4afd-8fc8-90c6515e95d5'}
+1a45111d37f10d40ff3512e8ea705f3a; {'ligaName': 'Италия. Серия А3', 'sport_Id': 5, 'bk_id_liga': '3e438778-ce7e-48fd-b1e8-88324fde82fd'}
+9219fc8679fe3d732098c9ed916acbb8; {'ligaName': 'Венгрия. Региональная лига', 'sport_Id': 5, 'bk_id_liga': '0c8e8f14-6dad-4f78-a0d6-9f7c73835e2e'}
+380a1e06043f2398975cb1e176d63f32; {'ligaName': 'Мужчины. Чемпионат Сев. Македонии. 1-й дивизион', 'sport_Id': 5, 'bk_id_liga': 'd98695f9-bbda-44ae-85a0-c49b966d528e'}
+440771bd35a35f8b5f407f03373ec7d2; {'ligaName': 'Жен. Россия. Лига Про', 'sport_Id': 5, 'bk_id_liga': '7eb46c3b-483c-4062-9bbb-963457677989'}
+d6262093a61b80782e83e97e7e02e9a1; {'ligaName': 'Мужчины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': 'ef1bcc44-5871-4d54-9d26-df149d379918'}
+fc1e62595e2b5102678e001adb34f319; {'ligaName': 'Женшины. Исландия. Олис Дейлдин. Основное время', 'sport_Id': 15, 'bk_id_liga': '65dc8dd0-16bf-49af-8507-488197f93cf7'}
+ce8c5d8e26ebeccfb0250189ba4778ff; {'ligaName': 'Мужчины. Катар. Кубок Эмира. Основное время', 'sport_Id': 15, 'bk_id_liga': '16f84b47-2402-4530-adfd-775612816e35'}
+f032bc38d020786b282d5f1775616f8b; {'ligaName': 'Мужчины. Чемпионат Сербии. 2-я лига. Основное время', 'sport_Id': 15, 'bk_id_liga': '8f4eda34-5479-4ce5-857f-9502e4237104'}
+379a47d7be2fa3460c66025ffc6e30e6; {'ligaName': 'FIFA H2H Liga. Сборные. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '1bbdc6a2-1156-44b9-9111-840c5642c347'}
+56bbd270021ab4a79e877d7101652576; {'ligaName': 'FIFA Battle. Night  Europa League. 8 mins play', 'sport_Id': 7, 'bk_id_liga': '02835f9c-21e8-4e18-880b-98dab528d119'}
+2312b57b238dffbd88232fe3f38163ad; {'ligaName': 'FIFA H2H Liga. 8 mins play', 'sport_Id': 7, 'bk_id_liga': 'df449dd7-c5d8-442a-8f9c-ff243319e898'}
+aeef702b17ac2c19c7277cc7b793dd30; {'ligaName': 'NBA. H2H GG League. 4x5', 'sport_Id': 9, 'bk_id_liga': '7d862f51-5c79-48c0-9a81-886105d992a6'}
+a469d7916e7e23f1b63ab6b608097af0; {'ligaName': 'NBA 2K. Лига Про. Challenge Tour 4x5min', 'sport_Id': 9, 'bk_id_liga': '9674fc76-6475-4c90-9b30-aea643c4c70d'}
+94c6360f148ee5af9e75f9a52106e276; {'ligaName': 'NHL H2H Liga', 'sport_Id': 10, 'bk_id_liga': 'cc2d8f56-535f-4479-b686-e39c5d686fbb'}
