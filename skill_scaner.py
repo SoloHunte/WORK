@@ -239,13 +239,15 @@ def add_gamer(info_gamer, bk_id, bk_name):
             continue
 
     i_sql = i_sql[0:-1]
-    sql = "INSERT INTO gamer_info (skill_id, name, bk_id, liga_info, bk_id_gamer) VALUES " + i_sql + "ON DUPLICATE ""KEY UPDATE name ""= VALUES(name), ""bk_id"" = VALUES(bk_id), ""liga_info"" = VALUES(liga_info), ""bk_id_gamer"" = VALUES(bk_id_gamer) "
+    sql = "INSERT INTO gamer_info (skill_id, name, bk_id, liga_info, bk_id_gamer) VALUES " + i_sql +\
+          "ON DUPLICATE ""KEY UPDATE name ""= VALUES(name), ""bk_id"" = VALUES(bk_id), ""liga_info"" = " \
+          "VALUES(liga_info), ""bk_id_gamer"" = VALUES(bk_id_gamer) "
     query = sql
     cur.execute(query)
     conn.commit()
 
     l_sql = l_sql[0:-1]
-    sql = "INSERT INTO gamer_live (skill_id, gamer_id_bk, liga_info, bk_id, name, gamer_info_1, gamer_info_2, " \
+    sql = "INSERT INTO gamer_live (skill_id, bk_id_gamer, liga_info, bk_id, name, gamer_info_1, gamer_info_2, " \
           "time_game, score, period, link, started_at) VALUES " + l_sql + " ON DUPLICATE KEY UPDATE liga_info = " \
                                                                           "VALUES(liga_info), bk_id = VALUES(bk_id), " \
                                                                           "name = VALUES(name), gamer_info_1 = " \
