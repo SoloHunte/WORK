@@ -222,10 +222,10 @@ def add_gamer(info_gamer, bk_id, bk_name):
             gamer1 = info_gamer[ins]['gamer1'].replace("'", "\\'")
             gamer2 = info_gamer[ins]['gamer2'].replace("'", "\\'")
             name = gamer1 + ' - ' + gamer2
-            time_game = info_gamer[ins]['time_game']
+            time_game = str(info_gamer[ins]['time_game'])
             score = info_gamer[ins]['score']
             period = info_gamer[ins]['period']
-            started_at = str(datetime.utcfromtimestamp(info_gamer[ins]['started_at']).strftime('%Y-%m-%d %H:%M:%S'))
+            started_at = info_gamer[ins]['started_at']
             sport = info_gamer[ins]['sport_id']
             link = (info_gamer[ins]['link']).replace("'", "\\'")
             gamer_id_bk = str(info_gamer[ins]['game_id'])
@@ -235,11 +235,11 @@ def add_gamer(info_gamer, bk_id, bk_name):
             i_sql += "('" + gamer_info_2 + "', '" + gamer2 + "'," + bk_id + ", '" + liga_info + "'," + bk_id_gamer2 + "),"
             l_sql += "('" + ins + "', '" + gamer_id_bk + "', '" + liga_info + "', " + bk_id + ", '" + name + "', '" + gamer_info_1 + "', '" + gamer_info_2 + "', '" + time_game + "', '" + score + "', '" + period + "', '" + link + "', '" + started_at + "'),"
             d_sql = d_sql.replace("'" + ins + "',", "")
-        except:
+        except Exception as _er:
             continue
 
     i_sql = i_sql[0:-1]
-    sql = "INSERT INTO gamer_info (skill_id, name, bk_id, liga_info, bk_id_gamer) VALUES " + i_sql + "ON DUPLICATE KEY UPDATE name = VALUES(name), bk_id = VALUES(bk_id), liga_info = VALUES(liga_info), bk_id_gamer = VALUES(bk_id_gamer)"
+    sql = "INSERT INTO gamer_info (skill_id, name, bk_id, liga_info, bk_id_gamer) VALUES " + i_sql + " ON DUPLICATE KEY UPDATE name = VALUES(name), bk_id = VALUES(bk_id), liga_info = VALUES(liga_info), bk_id_gamer = VALUES(bk_id_gamer)"
     query = sql
     cur.execute(query)
     conn.commit()
