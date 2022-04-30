@@ -84,10 +84,9 @@ for sportID in sportActive:
                             gamer1 = gameInfo['HT']
                             gamer2 = gameInfo['AT']
                             game_id = gameInfo['Id']
-                            gamer_info_1 = '0'
-                            gamer_info_2 = '0'
+
                             periodName = gameInfo['ES']
-                            started_at = gameInfo['D']
+                            # started_at = gameInfo['D']
                             id_game_hash = hashlib.md5((str(gameInfo['Id']) + bk_name).encode('utf-8')).hexdigest()
                             # print(id_game_hash)
                             # Тут получим все коэфы на игру
@@ -109,12 +108,12 @@ for sportID in sportActive:
                         cur = skill.connect
                         id_gamer1 = hashlib.md5((str(gamer1) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
                         id_gamer2 = hashlib.md5((str(gamer2) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
-                        bk_id_gamer1 = hashlib.md5(
-                            (str(id_gamer1) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
-                        bk_id_gamer2 = hashlib.md5(
-                            (str(id_gamer2) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
+                        bk_id_gamer1 = '0'
+                        bk_id_gamer2 = '0'
+                        gamer_info_1 = hashlib.md5((str(bk_id_gamer1) + bk_name).encode('utf-8')).hexdigest()
+                        gamer_info_2 = hashlib.md5((str(bk_id_gamer2) + bk_name).encode('utf-8')).hexdigest()
                         time_game = gameInfo['PT']
-                        # started_at = datetime.time
+                        started_at = datetime.time
                         score = gameInfo['SS']
                         sport_id = sportid_my
 
@@ -128,6 +127,7 @@ for sportID in sportActive:
                                                     'name_sport': active_sport_name[int(sport_id)], 'link': link,
                                                     'game_id': game_id, 'gamer_info_1': gamer_info_1,
                                                     'gamer_info_2': gamer_info_2, 'period': periodName}
+
                         info_koef[id_game_hash] = {'game_id': game_id}
 
 print(len(gamerAll))
