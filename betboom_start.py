@@ -161,6 +161,6 @@ try:
         skill.add_gamer(info_gamer, bk_id, bk_name)
         skill.add_koef(koef_skill, bk_id)
         print('=' * 100)
-        time.sleep(5)
+        time.sleep(4)
 except KeyboardInterrupt:
     print('Принудиловка')
