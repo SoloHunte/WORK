@@ -1,10 +1,9 @@
+#!/usr/bin/python3
+# -*- coding: utf8 -*-
+
 import datetime
 import hashlib
 import time
-
-import mysql.connector
-import requests
-# impot skill_scaner
 import skill_scaner
 import skill_scaner as skill
 
@@ -24,7 +23,7 @@ headers = {
     'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
     'countryCode': 'RU',
 }
-# Stas
+
 while skill.connect():
     time.sleep(60)
 cur = skill.cur
@@ -32,7 +31,6 @@ conn = skill.conn
 timeout = 30
 bk_name = 'bet_boom'
 
-# End Stas
 voc_sports = {1: '1', 3: '2', 15: '3', 4: '4', 12: '5', 10: '6', 94: '7', 53: '8', 95: '9', 96: '10', 17: '14',
               13: '15'}
 # session = requests.Session()
@@ -40,8 +38,7 @@ try:
     while True:
         skill.start_session()
         link = 'https://sport.betboom.ru/Live/Sports?langId=1&partnerId=147&countryCode=RU'
-        # Делаем через сессию из skill_scaner
-        # response = session.get(link, headers=headers)
+
         data = skill.scaner_data_json(link, headers, timeout)
         kolGame = 0
         sportActive = {}
@@ -50,8 +47,7 @@ try:
         info_koef = {}
         name_kof_skill = {}
         koef_skill = {}
-        # bk_name = 'betboom_bet'
-        # for voc in response.json():
+
         for voc in data:
             kolGame += voc['EC']
             sportActive[voc['Id']] = voc['N']
@@ -59,7 +55,7 @@ try:
         gamerAll = {}
         for sportID in sportActive:
             link = f'https://sport.betboom.ru/Live/GetLiveEvents?sportId={sportID}&checkIsActiveAndBetStatus=false&stakeTypes=All&partnerId=147&languageId=1&countryCode=RU&langId=1'
-            # Здесь также через сессию из skill_scaner
+
             skill.start_session()
             data = skill.scaner_data_json(link, headers, timeout)
             if 'CNT' in data:
@@ -86,8 +82,7 @@ try:
                                     # started_at = gameInfo['D']
                                     id_game_hash = hashlib.md5(
                                         (str(gameInfo['Id']) + bk_name).encode('utf-8')).hexdigest()
-                                    # print(id_game_hash)
-                                    # Тут получим все коэфы на игру
+
                                     for koef in koefInfo:
                                         if 'Stakes' in koef:
                                             koefAll += len(koef['Stakes'])
