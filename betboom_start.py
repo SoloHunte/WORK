@@ -113,7 +113,7 @@ for sportID in sportActive:
                         gamer_info_1 = hashlib.md5((str(bk_id_gamer1) + bk_name).encode('utf-8')).hexdigest()
                         gamer_info_2 = hashlib.md5((str(bk_id_gamer2) + bk_name).encode('utf-8')).hexdigest()
                         time_game = gameInfo['PT']
-                        started_at = datetime.time
+                        started_at = str(datetime.datetime.now())
                         score = gameInfo['SS']
                         sport_id = sportid_my
 

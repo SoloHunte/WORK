@@ -233,19 +233,40 @@ def add_gamer(info_gamer, bk_id, bk_name):
             gamer_info_2 = info_gamer[ins]['gamer_info_2']
             i_sql += "('" + gamer_info_1 + "', '" + gamer1 + "'," + bk_id + ", '" + liga_info + "'," + bk_id_gamer1 + "),"
             i_sql += "('" + gamer_info_2 + "', '" + gamer2 + "'," + bk_id + ", '" + liga_info + "'," + bk_id_gamer2 + "),"
-            l_sql += "('" + ins + "', '" + gamer_id_bk + "', '" + liga_info + "', " + bk_id + ", '" + name + "', '" + gamer_info_1 + "', '" + gamer_info_2 + "', '" + time_game + "', '" + score + "', '" + period + "', '" + link + "', '" + started_at + "'),"
+            l_sql += "('" + ins + "', '" + gamer_id_bk + "', '" + liga_info + "', " + bk_id + ", '" + name + "', '" + \
+                     gamer_info_1 + "', '" + gamer_info_2 + "', '" + time_game + "', '" + score + "', '" + period + \
+                     "', '" + link + "', '" + started_at + "'),"
             d_sql = d_sql.replace("'" + ins + "',", "")
         except Exception as _er:
             continue
 
     i_sql = i_sql[0:-1]
-    sql = "INSERT INTO gamer_info (skill_id, name, bk_id, liga_info, bk_id_gamer) VALUES " + i_sql + " ON DUPLICATE KEY UPDATE name = VALUES(name), bk_id = VALUES(bk_id), liga_info = VALUES(liga_info), bk_id_gamer = VALUES(bk_id_gamer)"
+    sql = "INSERT INTO gamer_info (skill_id, name, bk_id, liga_info, bk_id_gamer) VALUES " + i_sql + "ON DUPLICATE " \
+                                                                                                     "KEY UPDATE name " \
+                                                                                                     "= VALUES(name), " \
+                                                                                                     "bk_id = VALUES(" \
+                                                                                                     "bk_id), " \
+                                                                                                     "liga_info = " \
+                                                                                                     "VALUES(" \
+                                                                                                     "liga_info), " \
+                                                                                                     "bk_id_gamer = " \
+                                                                                                     "VALUES(" \
+                                                                                                     "bk_id_gamer) "
     query = sql
     cur.execute(query)
     conn.commit()
 
     l_sql = l_sql[0:-1]
-    sql = "INSERT INTO gamer_live (skill_id, gamer_id_bk, liga_info, bk_id, name, gamer_info_1, gamer_info_2, time_game, score, period, link, started_at) VALUES " + l_sql + " ON DUPLICATE KEY UPDATE liga_info = VALUES(liga_info), bk_id = VALUES(bk_id), name = VALUES(name), gamer_info_1 = VALUES(gamer_info_1), gamer_info_2 = VALUES(gamer_info_2), time_game = VALUES(time_game), score = VALUES(score), period = VALUES(period), comment = VALUES(comment), link = VALUES(link), started_at = VALUES(started_at), update_at = NOW()"
+    sql = "INSERT INTO gamer_live (skill_id, gamer_id_bk, liga_info, bk_id, name, gamer_info_1, gamer_info_2, " \
+          "time_game, score, period, link, started_at) VALUES " + l_sql + " ON DUPLICATE KEY UPDATE liga_info = " \
+                                                                          "VALUES(liga_info), bk_id = VALUES(bk_id), " \
+                                                                          "name = VALUES(name), gamer_info_1 = " \
+                                                                          "VALUES(gamer_info_1), gamer_info_2 = " \
+                                                                          "VALUES(gamer_info_2), time_game = VALUES(" \
+                                                                          "time_game), score = VALUES(score), " \
+                                                                          "period = VALUES(period), comment = VALUES(" \
+                                                                          "comment), link = VALUES(link), started_at " \
+                                                                          "= VALUES(started_at), update_at = NOW() "
 
     query = sql
     cur.execute(query)
