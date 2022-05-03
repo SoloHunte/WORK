@@ -39,7 +39,6 @@ voc_sports = {1: '1', 3: '2', 15: '3', 4: '4', 12: '5', 10: '6', 94: '7', 53: '8
 try:
     while True:
         skill.start_session()
-
         link = 'https://sport.betboom.ru/Live/Sports?langId=1&partnerId=147&countryCode=RU'
         # Делаем через сессию из skill_scaner
         # response = session.get(link, headers=headers)
@@ -48,26 +47,21 @@ try:
         sportActive = {}
         info_liga = {}
         info_gamer = {}
-
         info_koef = {}
         name_kof_skill = {}
         koef_skill = {}
-
         # bk_name = 'betboom_bet'
         # for voc in response.json():
         for voc in data:
             kolGame += voc['EC']
             sportActive[voc['Id']] = voc['N']
         print(kolGame)
-
         gamerAll = {}
-
         for sportID in sportActive:
             link = f'https://sport.betboom.ru/Live/GetLiveEvents?sportId={sportID}&checkIsActiveAndBetStatus=false&stakeTypes=All&partnerId=147&languageId=1&countryCode=RU&langId=1'
             # Здесь также через сессию из skill_scaner
             skill.start_session()
             data = skill.scaner_data_json(link, headers, timeout)
-
             if 'CNT' in data:
                 for country in data['CNT']:
                     if 'CL' in country:
@@ -104,7 +98,6 @@ try:
                                     except Exception as _erspid:
                                         sportid_my = '0'
                                         continue
-
                             id_liga_hash = hashlib.md5((str(bk_id_liga) + bk_name).encode('utf-8')).hexdigest()
                             if sportid_my == '0':
                                 continue
@@ -135,27 +128,9 @@ try:
                                                             'link': link,
                                                             'game_id': game_id, 'gamer_info_1': gamer_info_1,
                                                             'gamer_info_2': gamer_info_2, 'period': periodName}
-
                                 info_koef[id_game_hash] = {'game_id': game_id}
-
         print(len(gamerAll))
         print(len(info_liga))
-        #
-        # for i in info_liga:
-        #     print(f'{i}->{info_liga[i]}')
-        #     with open('liga_info.csv', 'a', encoding='utf=8') as wr:
-        #         wr.write(f'{i}; {info_liga[i]}\n')
-        #
-        # for i in info_gamer:
-        #     print(f'{i}->{info_gamer[i]}')
-        #     with open('liga_gamer.csv', 'a', encoding='utf=8') as wr:
-        #         wr.write(f'{i}; {info_gamer[i]}\n')
-        #
-        # for i in info_koef:
-        #     print(f'{i}->{info_koef[i]}')
-        #     with open('liga_koef.csv', 'a', encoding='utf=8') as wr:
-        #         wr.write(f'{i}; {info_koef[i]}\n')
-
         bk_id = '19'
         skill.add_liga(info_liga, bk_id)
         skill.add_gamer(info_gamer, bk_id, bk_name)
@@ -164,3 +139,6 @@ try:
         time.sleep(4)
 except KeyboardInterrupt:
     print('Принудиловка')
+    skill.close_session()
+    skill.cur.close()
+    skill.conn.close()
