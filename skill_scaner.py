@@ -186,7 +186,7 @@ def add_liga(info_match, bk_id):
 
     for ins in info_match:
         w_sql += "('" + ins + "', '" \
-                 + info_match[ins]['bk_id_liga'].replace("'","\\'") + "', " \
+                 + info_match[ins]['ligaName'].replace("'","\\'") + "', " \
                  + str(info_match[ins]['sport_Id']) + ", " + bk_id + ", '" + str(info_match[ins]['bk_id_liga']) + "', 1),"
     w_sql = w_sql[0:-1]
     sql = "INSERT INTO liga_info (skill_id, name, sport_id, bk_id, bk_liga_id, live_is) VALUES " + w_sql + \

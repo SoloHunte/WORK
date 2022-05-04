@@ -77,12 +77,10 @@ try:
                                     gamer1 = gameInfo['HT']
                                     gamer2 = gameInfo['AT']
                                     game_id = gameInfo['Id']
-
                                     periodName = gameInfo['ES']
                                     # started_at = gameInfo['D']
                                     id_game_hash = hashlib.md5(
                                         (str(gameInfo['Id']) + bk_name).encode('utf-8')).hexdigest()
-
                                     for koef in koefInfo:
                                         if 'Stakes' in koef:
                                             koefAll += len(koef['Stakes'])
@@ -110,7 +108,6 @@ try:
                                 started_at = str(datetime.datetime.now())
                                 score = gameInfo['SS']
                                 sport_id = sportid_my
-
                                 active_sport_name = skill_scaner.active_sport_names(bk_name)
                                 info_liga[id_liga_hash] = {'ligaName': ligaName, 'sport_Id': sportid_my,
                                                            'bk_id_liga': bk_id_liga}
