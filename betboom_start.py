@@ -149,7 +149,7 @@ try:
                                     name_koef['bk_id'] = '19'
                                     for koef in koefInfo:
                                         print(koef)
-                                        name_koef['short_name'] = koef['N']  # пересобрать словарь, что то идет не так
+                                        name_koef['short_name'] = koef['N']
                                         name_koef['name'] = koef['N']
                                         name_koef['comment'] = ''
 
