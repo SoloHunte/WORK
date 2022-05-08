@@ -130,17 +130,13 @@ try:
                                 for gameInfo in ligaInfo['E']:
                                     gamerAll[gameInfo['Id']] = gameInfo['N']
                                     koefAll = 0
-
                                     koefInfo = gameInfo['StakeTypes']
-
-
                                     print(sportNameThis)
                                     print(gameInfo['N'])
                                     print(str(gameInfo['Id']))
                                     gamer1 = gameInfo['HT']
                                     gamer2 = gameInfo['AT']
                                     game_id = gameInfo['Id']
-
                                     try:
                                         periodName = period(gameInfo['ES'], voc_sports[sportIdThis])
                                     except Exception:
@@ -151,15 +147,17 @@ try:
                                         (str(gameInfo['Id']) + bk_name).encode('utf-8')).hexdigest()
                                     name_koef['skill_id'] = id_game_hash
                                     name_koef['bk_id'] = '19'
-                                    name_koef['short_name'] = koefInfo['N'] #пересобрать словарь, что то идет не так
-                                    name_koef['name'] = koefInfo['N']
-                                    name_koef['comment'] = ''
-
                                     for koef in koefInfo:
-                                        if 'Stakes' in koef:
-                                            koefAll += len(koef['Stakes'])
-                                    print(koefAll)
-                                    print('-' * 50)
+                                        print(koef)
+                                        name_koef['short_name'] = koef['N']  # пересобрать словарь, что то идет не так
+                                        name_koef['name'] = koef['N']
+                                        name_koef['comment'] = ''
+
+                                    # for koef in koefInfo:
+                                    #     if 'Stakes' in koef:
+                                    #         koefAll += len(koef['Stakes'])
+                                    # print(koefAll)
+                                    # print('-' * 50)
                                     try:
                                         sportid_my = voc_sports[sportIdThis]
                                     except Exception as _erspid:
