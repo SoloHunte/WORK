@@ -94,7 +94,8 @@ timeout = 35
 bk_name = 'bet_boom'
 
 voc_sports = {1: '1', 3: '2', 15: '3', 4: '4', 12: '5', 10: '6', 94: '7', 53: '8', 95: '9', 96: '10', 17: '14',
-              13: '15', 25: '3'}
+              13: '15'}
+
 # session = requests.Session()
 try:
     while True:
@@ -143,27 +144,21 @@ try:
                                     except Exception:
                                         print('не нужный спорт')
                                         continue
-                                    # started_at = gameInfo['D']
+
                                     id_game_hash = hashlib.md5(
                                         (str(gameInfo['Id']) + bk_name).encode('utf-8')).hexdigest()
-                                    name_koef['skill_id'] = id_game_hash
-                                    name_koef['bk_id'] = '19'
+
                                     for koef in koefInfo:
                                         print(koef)
                                         name_koef['short_name'] = koef['N']
                                         name_koef['name'] = koef['N']
                                         name_koef['comment'] = ''
-
-                                    # for koef in koefInfo:
-                                    #     if 'Stakes' in koef:
-                                    #         koefAll += len(koef['Stakes'])
-                                    # print(koefAll)
-                                    # print('-' * 50)
                                     try:
                                         sportid_my = voc_sports[sportIdThis]
                                     except Exception as _erspid:
                                         sportid_my = '0'
                                         continue
+
                             id_liga_hash = hashlib.md5((str(bk_id_liga) + bk_name).encode('utf-8')).hexdigest()
                             if sportid_my == '0':
                                 continue
@@ -185,7 +180,6 @@ try:
                                 scoreHS = str(gameInfo['HS'])
                                 scoreAS = str(gameInfo['AS'])
                                 score = right_score(scoreSS, scoreHS, scoreAS, num_period)
-
                                 active_sport_name = skill_scaner.active_sport_names(bk_name)
                                 info_liga[id_liga_hash] = {'ligaName': ligaName, 'sport_Id': sportid_my,
                                                            'bk_id_liga': bk_id_liga}
@@ -199,6 +193,19 @@ try:
                                                             'game_id': game_id, 'gamer_info_1': gamer_info_1,
                                                             'gamer_info_2': gamer_info_2, 'period': periodName}
                                 info_koef[id_game_hash] = {'game_id': game_id}
+                                for koef_stakes in koef['Stakes']:
+                                    kof_hash = hashlib.md5((active_sport_name[int(sport_id)] + str(koef['Id']) + koef[
+                                        'N'] + str(koef_stakes['A']) + bk_name).encode('utf-8')).hexdigest()
+                                    name_hash = hashlib.md5(
+                                        (active_sport_name[int(sport_id)] + koef['N'] + bk_name).encode(
+                                            'utf-8')).hexdigest()
+                                    comment = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"].replace(" ", "")}'
+                                    koef_Tot = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"].replace(" ", "")}'
+                                    koef_skill[kof_hash] = {'game_live': id_game_hash,
+                                                            'game_orig': info_koef[id_game_hash]['game_id'],
+                                                            'name_hash': name_hash, 'name': comment,
+                                                            'short_name': koef_Tot, 'koef': str(koef['A']),
+                                                            'param': str(koef_stakes['F']), 'dop': 'dop'}
         print(len(gamerAll))
         print(len(info_liga))
         bk_id = '19'
