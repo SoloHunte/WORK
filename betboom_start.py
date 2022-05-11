@@ -90,7 +90,7 @@ while skill.connect():
     time.sleep(60)
 cur = skill.cur
 conn = skill.conn
-timeout = 35
+timeout = 50
 bk_name = 'bet_boom'
 
 voc_sports = {1: '1', 3: '2', 15: '3', 4: '4', 12: '5', 10: '6', 94: '7', 53: '8', 95: '9', 96: '10', 17: '14',
@@ -134,8 +134,8 @@ try:
                                     koefAll = 0
                                     koefInfo = gameInfo['StakeTypes']
                                     print(sportNameThis)
-                                    print(gameInfo['N'])
-                                    print(str(gameInfo['Id']))
+                                    # print(gameInfo['N'])
+                                    # print(str(gameInfo['Id']))
                                     gamer1 = gameInfo['HT']
                                     gamer2 = gameInfo['AT']
                                     game_id = gameInfo['Id']
@@ -149,7 +149,7 @@ try:
                                         (str(gameInfo['Id']) + bk_name).encode('utf-8')).hexdigest()
 
                                     for koef in koefInfo:
-                                        print(koef)
+                                        # print(koef)
                                         name_koef['short_name'] = koef['N']
                                         name_koef['name'] = koef['N']
                                         name_koef['comment'] = ''
@@ -200,20 +200,27 @@ try:
                                         (active_sport_name[int(sport_id)] + koef['N'] + bk_name).encode(
                                             'utf-8')).hexdigest()
                                     comment = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"].replace(" ", "")}'
-                                    koef_Tot = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"].replace(" ", "")}'
+                                    koef_Tot = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"].replace(" ", "").split(":")[0]}'
+                                    dop = {'sport': info_gamer[id_game_hash]['name_sport'],
+                                           'game_id': info_gamer[id_game_hash]['game_id'],
+                                           'comment': comment,
+                                           'url_game': link,
+                                           'koef': koef_stakes["SFN"].replace(" ", "")
+
+                                    }
                                     koef_skill[kof_hash] = {'game_live': id_game_hash,
                                                             'game_orig': info_koef[id_game_hash]['game_id'],
                                                             'name_hash': name_hash, 'name': comment,
-                                                            'short_name': koef_Tot, 'koef': str(koef['A']),
-                                                            'param': str(koef_stakes['F']), 'dop': 'dop'}
-        print(len(gamerAll))
-        print(len(info_liga))
+                                                            'short_name': koef_Tot, 'koef': str(koef_stakes['A']),
+                                                            'param': str(koef_stakes['F']), 'dop': dop}
+        # print(len(gamerAll))
+        # print(len(info_liga))
         bk_id = '19'
         skill.add_liga(info_liga, bk_id)
         skill.add_gamer(info_gamer, bk_id, bk_name)
         skill.add_koef(koef_skill, bk_id)
         print('=' * 100)
-        time.sleep(4)
+        time.sleep(1)
 except KeyboardInterrupt:
     print('Принудиловка')
     skill.close_session()
