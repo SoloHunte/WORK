@@ -139,11 +139,7 @@ try:
                                     gamer1 = gameInfo['HT']
                                     gamer2 = gameInfo['AT']
                                     game_id = gameInfo['Id']
-                                    try:
-                                        periodName = period(gameInfo['ES'], voc_sports[sportIdThis])
-                                    except Exception:
-                                        print('не нужный спорт')
-                                        continue
+
 
                                     id_game_hash = hashlib.md5(
                                         (str(gameInfo['Id']) + bk_name).encode('utf-8')).hexdigest()
@@ -181,6 +177,10 @@ try:
                                 scoreHS = str(gameInfo['HS'])
                                 scoreAS = str(gameInfo['AS'])
                                 score = right_score(scoreSS, scoreHS, scoreAS, num_period)
+                                try:
+                                    periodName = period(score, voc_sports[sportIdThis])
+                                except Exception:
+                                    pass
                                 active_sport_name = skill_scaner.active_sport_names(bk_name)
                                 info_liga[id_liga_hash] = {'ligaName': ligaName, 'sport_Id': sportid_my,
                                                            'bk_id_liga': bk_id_liga}
@@ -200,8 +200,8 @@ try:
                                     name_hash = hashlib.md5(
                                         (active_sport_name[int(sport_id)] + koef['N'] + bk_name).encode(
                                             'utf-8')).hexdigest()
-                                    comment = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"].replace(" ", "")}'
-                                    koef_Tot = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"].replace(" ", "").split(":")[0]}'
+                                    comment = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"]}'
+                                    koef_Tot = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"]}:{koef_stakes["A"]}'
                                     dop = {'sport': info_gamer[id_game_hash]['name_sport'],
                                            'game_id': info_gamer[id_game_hash]['game_id'],
                                            'comment': comment,
