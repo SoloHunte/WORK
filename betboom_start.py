@@ -168,10 +168,11 @@ try:
                                     (str(gamer1) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
                                 id_gamer2 = hashlib.md5(
                                     (str(gamer2) + str(sportid_my) + bk_name).encode('utf-8')).hexdigest()
-                                bk_id_gamer1 = str(random.randint(3, 500))
-                                bk_id_gamer2 = str(random.randint(3, 500))
-                                gamer_info_1 = hashlib.md5((str(bk_id_gamer1) + bk_name).encode('utf-8')).hexdigest()
-                                gamer_info_2 = hashlib.md5((str(bk_id_gamer2) + bk_name).encode('utf-8')).hexdigest()
+                                bk_id_gamer1 = '0'
+                                bk_id_gamer2 = '0'
+                                # Изменим формирование, добавим id_gamer
+                                gamer_info_1 = hashlib.md5((str(bk_id_gamer1) + bk_name + id_gamer1).encode('utf-8')).hexdigest()
+                                gamer_info_2 = hashlib.md5((str(bk_id_gamer2) + bk_name + id_gamer2).encode('utf-8')).hexdigest()
                                 time_game = gameInfo['PT']
                                 started_at = str(datetime.datetime.now())
                                 sport_id = sportid_my
@@ -207,7 +208,7 @@ try:
                                            'url_game': link,
                                            'koef': koef_stakes["SFN"].replace(" ", "")
 
-                                    }
+                                           }
                                     koef_skill[kof_hash] = {'game_live': id_game_hash,
                                                             'game_orig': info_koef[id_game_hash]['game_id'],
                                                             'name_hash': name_hash, 'name': comment,
@@ -220,7 +221,7 @@ try:
         skill.add_gamer(info_gamer, bk_id, bk_name)
         skill.add_koef(koef_skill, bk_id)
         print('=' * 100)
-        time.sleep(1)
+        time.sleep(3)
 except KeyboardInterrupt:
     print('Принудиловка')
     skill.close_session()
