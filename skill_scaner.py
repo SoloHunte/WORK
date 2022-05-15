@@ -303,7 +303,7 @@ def clear_koef(bk_name):
 
 
 def add_koef(koef_skill, bk_id):
-    sql = "SELECT short_name FROM name_koef WHERE bk_id=" + bk_id + " and name <> ''"
+    sql = "SELECT short_name FROM name_koef WHERE bk_id=" + bk_id
     query = sql
     cur.execute(query)
     row = cur.fetchall()

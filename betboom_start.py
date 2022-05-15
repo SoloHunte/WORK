@@ -200,22 +200,29 @@ try:
                                     name_hash = hashlib.md5(
                                         (active_sport_name[int(sport_id)] + koef['N'] + bk_name).encode(
                                             'utf-8')).hexdigest()
-                                    comment = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"]}'
-                                    koef_Tot = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"]}:{koef_stakes["A"]}'
+                                    koef_name_for_koef_Tot = koef_stakes["SFN"]
+                                    if '(' in koef_name_for_koef_Tot:
+                                        koef_name_for_koef_Tot = koef_stakes["SFN"].split('(')[0] + '()'
+                                    else:
+                                        koef_name_for_koef_Tot = koef_stakes["SFN"].split(':')[0]
+                                    if koef_stakes["A"] is None:
+                                        koef_stakes["A"] = 'None'
+
+                                    comment = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_stakes["SFN"]}:{str(koef_stakes["A"])}'
+                                    koef_Tot = f'{active_sport_name[int(sport_id)]}. {gameInfo["ES"]}. {koef_name_for_koef_Tot}'
                                     dop = {'sport': info_gamer[id_game_hash]['name_sport'],
-                                           'game_id': info_gamer[id_game_hash]['game_id'],
+                                           'game_id': str(info_gamer[id_game_hash]['game_id']),
                                            'comment': comment,
                                            'url_game': link,
-                                           'koef': koef_stakes["SFN"].replace(" ", "")
+                                           'koef': str(koef_stakes["SFN"].replace(" ", ""))
 
                                            }
                                     koef_skill[kof_hash] = {'game_live': id_game_hash,
-                                                            'game_orig': info_koef[id_game_hash]['game_id'],
+                                                            'game_orig': str(info_koef[id_game_hash]['game_id']),
                                                             'name_hash': name_hash, 'name': comment,
                                                             'short_name': koef_Tot, 'koef': str(koef_stakes['A']),
                                                             'param': str(koef_stakes['F']), 'dop': dop}
-        # print(len(gamerAll))
-        # print(len(info_liga))
+
         bk_id = '19'
         skill.add_liga(info_liga, bk_id)
         skill.add_gamer(info_gamer, bk_id, bk_name)
