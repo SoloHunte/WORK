@@ -332,9 +332,9 @@ def add_koef(koef_skill, bk_id):
                 dop = str(koef_skill[ins]['dop']).replace("'", '"')
                 game_live = koef_skill[ins]['game_live']
                 game_orig = koef_skill[ins]['game_orig']
-                name = koef_skill[ins]['name']
-                short_name = koef_skill[ins]['short_name']
-                param = koef_skill[ins]['param']
+                name = koef_skill[ins]['name'].replace("'", '"')
+                short_name = koef_skill[ins]['short_name'].replace("'", '"')
+                param = str(koef_skill[ins]['param'])
                 if param not in ['NULL', 'null']:
                     param = "'" + param + "'"
                 name_hash = koef_skill[ins]['name_hash']
