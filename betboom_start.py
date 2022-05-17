@@ -230,8 +230,8 @@ try:
 
                                            }
                                     dop = str(dop).replace("'", '"')
-                                    koef_stakes_a= str(koef_stakes['A'])
-                                    param = str(koef_stakes['F'])
+                                    koef_stakes_a= str(koef_stakes['F'])
+                                    param = str(koef_stakes['A'])
                                     game_orig = str(info_koef[id_game_hash]['game_id'])
                                     koef_skill[kof_hash] = {'game_live': id_game_hash,
                                                             'game_orig': game_orig,
