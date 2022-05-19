@@ -26,14 +26,29 @@ headers = {
 }
 
 
-def funk_for_short_name(sport, per, kof_nam, kof_param):
+def funk_for_short_name(sport, per, kof_nam, kof_param, gamer1, gamer2):
     global kof_in
+    if sport == 'Хоккей':
+        if gamer1 in kof_nam.split(':')[1]:
+            kof_in = f'{kof_nam.split(":")[0]}: Команда 1'
+        elif gamer2 in kof_nam.split(':')[1]:
+            kof_in = f'{kof_nam.split(":")[0]}: Команда 2'
+    if sport == 'Футбол':
+        if gamer1 in kof_nam.split(':')[1]:
+            kof_in = f'{kof_nam.split(":")[0]}: Команда 1'
+        elif gamer2 in kof_nam.split(':')[1]:
+            kof_in = f'{kof_nam.split(":")[0]}: Команда 2'
+
     if 'Тотал' in kof_nam:
         kof_in = kof_nam.split(':')[0]
     elif '(' in kof_nam:
         kof_in = kof_nam.split('(')[0] + '()'
+    else:
+        kof_in = kof_nam.split(':')[0] + kof_nam.split(':')[1]
     short_name = f'{sport}. {per}. {kof_in}'
-    commen = f'{sport}. {per}. {kof_nam}: {kof_param}'
+    commen = f'{sport}. {per}. {kof_nam}'
+    if short_name in '(':
+        short_name = f'{commen.split(":")[0]}:)'
     return short_name, commen
 
 
@@ -219,9 +234,9 @@ try:
                                     kof_param = str(koef_stakes["A"])
 
                                     comment = funk_for_short_name(sport, per, kof_nam,
-                                                                   kof_param)[1]
+                                                                  kof_param, gamer1, gamer2)[1]
                                     koef_Tot = funk_for_short_name(sport, per, kof_nam,
-                                                                   kof_param)[0]
+                                                                   kof_param, gamer1, gamer2)[0]
                                     dop = {"sport": info_gamer[id_game_hash]["name_sport"],
                                            "game_id": str(info_gamer[id_game_hash]["game_id"]),
                                            "comment": comment,
@@ -230,7 +245,7 @@ try:
 
                                            }
                                     dop = str(dop).replace("'", '"')
-                                    koef_stakes_a= str(koef_stakes['F'])
+                                    koef_stakes_a = str(koef_stakes['F'])
                                     param = str(koef_stakes['A'])
                                     game_orig = str(info_koef[id_game_hash]['game_id'])
                                     koef_skill[kof_hash] = {'game_live': id_game_hash,
