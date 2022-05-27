@@ -28,21 +28,31 @@ headers = {
 }
 
 
-def funk_for_short_name(sport, per, kof_nam, kof_param, gamer1, gamer2):
-    peri = per
-    if '(' in kof_nam:
+def funk_for_short_name(sport, kof_nam, kof_param, gamer1, gamer2):
+    div_kof_name = kof_nam.split(':')
+    if len(div_kof_name[0].split(' ')) > 1:
+        if div_kof_name[0].split(' ')[1] in ['сет', "гейм", "четверть", "половина", "тайм", "период"]:
+            new_name_kof = f'{div_kof_name[1]}:{div_kof_name[2]}'
+            peri = div_kof_name[0]
+        else:
+            new_name_kof = kof_nam
+            peri = 'Match'
+    else:
+        new_name_kof = kof_nam
+        peri = 'Match'
+    if '(' in new_name_kof:
         ferst_koef_nam = kof_nam.split('(')[0] + '('
         second_koef_nam = ')' + kof_nam.split(')')[1]
         kof_nam_new = ferst_koef_nam + second_koef_nam
     else:
-        kof_nam_new = kof_nam
+        kof_nam_new = new_name_kof
     if 'Ком.1' in kof_nam_new:
         kof_nam_new = kof_nam_new.replace('Ком.1', 'Комманда1')
     elif 'Ком.2' in kof_nam_new:
         kof_nam_new = kof_nam_new.replace('Ком.2', 'Комманда2')
 
-    # print(f'{kof_nam}\n {kof_nam_new}')
-    # print('+'*100)
+    print(f'{kof_nam}\n {kof_nam_new}')
+    print('+' * 100)
     # with open('rez_koef.csv', 'a', encoding='utf-8') as fw:
     #     fw.write(kof_nam + '\n')
     #     fw.write(kof_nam_new + '\n')
@@ -218,6 +228,7 @@ try:
                                 info_koef[id_game_hash] = {'game_id': game_id}
                                 for typ_kof in koefInfo:
                                     for koef_stakes in typ_kof['Stakes']:
+
                                         kof_hash = hashlib.md5(
                                             (active_sport_name[int(sport_id)] + str(koef_stakes['Id']) + koef_stakes[
                                                 'N'] + str(koef_stakes['A']) + bk_name).encode('utf-8')).hexdigest()
@@ -226,15 +237,16 @@ try:
                                                 'utf-8')).hexdigest()
 
                                         sport = active_sport_name[int(sport_id)]
-                                        # per = gameInfo["ES"]
+                                        per = gameInfo["ES"]
                                         kof_nam = koef_stakes["SFN"]
                                         kof_param = str(koef_stakes["A"])
                                         scor = gameInfo["SS"]
 
-                                        comment = funk_for_short_name(sport, periodName, kof_nam,
-                                                                      kof_param, gamer1, gamer2)[1]
-                                        koef_Tot = funk_for_short_name(sport, periodName, kof_nam,
-                                                                       kof_param, gamer1, gamer2)[0]
+                                        comment = funk_for_short_name(sport, kof_nam,
+                                                                          kof_param, gamer1, gamer2)[1]
+                                        koef_Tot = funk_for_short_name(sport, kof_nam,
+                                                                           kof_param, gamer1, gamer2)[0]
+
                                         dop = {"sport": info_gamer[id_game_hash]["name_sport"],
                                                "game_id": str(info_gamer[id_game_hash]["game_id"]),
                                                "comment": comment,
@@ -242,6 +254,7 @@ try:
                                                "koef": str(koef_stakes["SFN"].replace("'", "\\'"))
 
                                                }
+
                                         dop = str(dop).replace("'", '"')
                                         koef_stakes_a = str(koef_stakes['F'])
                                         param = str(koef_stakes['A'])
