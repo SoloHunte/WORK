@@ -73,9 +73,9 @@ def funk_for_short_name(sport, kof_nam, kof_param, gamer1, gamer2):
     else:
         kof_nam_new = new_name_kof
     if 'Ком.1' in kof_nam_new:
-        kof_nam_new = kof_nam_new.replace('Ком.1', 'Комманда1')
+        kof_nam_new = kof_nam_new.replace('Ком.1', 'Команда1')
     elif 'Ком.2' in kof_nam_new:
-        kof_nam_new = kof_nam_new.replace('Ком.2', 'Комманда2')
+        kof_nam_new = kof_nam_new.replace('Ком.2', 'Команда2')
 
     # print(f'{kof_nam}\n {kof_nam_new}')
     # print('+' * 100)
@@ -285,6 +285,11 @@ try:
                                         koef_stakes_a = str(koef_stakes['F'])
                                         param = str(koef_stakes['A'])
                                         game_orig = str(info_koef[id_game_hash]['game_id'])
+                                        
+                                        name_hash = hashlib.md5(
+                                            (active_sport_name[int(sport_id)] + koef_Tot + bk_name).encode(
+                                                'utf-8')).hexdigest()
+                                        
                                         koef_skill[kof_hash] = {'game_live': id_game_hash,
                                                                 'game_orig': game_orig,
                                                                 'name_hash': name_hash, 'name': comment,
