@@ -70,8 +70,10 @@ def funk_for_short_name(sport, kof_nam, kof_param, gamer1, gamer2):
                 except Exception as er:
                     print(next_kof_nam)
                     print(er)
+
     else:
         kof_nam_new = new_name_kof
+# проверить причину возникновения ошибки
     if 'Ком.1' in kof_nam_new:
         kof_nam_new = kof_nam_new.replace('Ком.1', 'Команда1')
     elif 'Ком.2' in kof_nam_new:
