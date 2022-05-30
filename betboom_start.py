@@ -29,14 +29,7 @@ headers = {
 
 
 def funk_for_short_name(sport, kof_nam, kof_param, gamer1, gamer2):
-
     global kof_nam_new
-    # if sport == 'Теннис':
-    #     if 'Исход' in kof_nam:
-    #         if 'сет' and 'гейм' in kof_nam:
-    #             print('условие выполнено')
-    #
-    # print('нет условия')
     div_kof_name = kof_nam.split(':')
     if len(div_kof_name[0].split(' ')) > 1:
         if div_kof_name[0].split(' ')[1] in ['сет', "гейм", "четверть", "половина", "тайм", "период"]:
@@ -86,13 +79,6 @@ def funk_for_short_name(sport, kof_nam, kof_param, gamer1, gamer2):
         kof_nam_new = kof_nam_new.replace('Ком.1', 'Команда1')
     elif 'Ком.2' in kof_nam_new:
         kof_nam_new = kof_nam_new.replace('Ком.2', 'Команда2')
-
-    # print(f'{kof_nam}\n {kof_nam_new}')
-    # print('+' * 100)
-    # with open('rez_koef.csv', 'a', encoding='utf-8') as fw:
-    #     fw.write(kof_nam + '\n')
-    #     fw.write(kof_nam_new + '\n')
-    #     fw.write('+' * 100 + '' + '\n')
     kof_nam_new = kof_nam_new.replace(peri, '')
     kof_nam = kof_nam.replace(peri, '')
     short_name = f'{sport}.{peri}.{kof_nam_new}'
@@ -100,19 +86,24 @@ def funk_for_short_name(sport, kof_nam, kof_param, gamer1, gamer2):
     if 'Теннис' in short_name and 'Исход' in short_name:
         if 'Match' in short_name:
             short_name = short_name
+            par_tim = None
         elif 'гейм' in short_name:
-            # print(f'поймали в шот наме {short_name}')
             time_short = short_name.split(' ')
-            par = time_short[2].split('-')[0]
+            par_tim = time_short[2].split('-')[0]
             time_short[2] = 'N'
-            time_short.append(par)
+
             tim = ''
             for i in time_short:
                 tim += i+' '
             short_name = tim
+
         else:
             short_name = short_name
-    return short_name, comment
+            par_tim = None
+    else:
+        short_name = short_name
+        par_tim = None
+    return short_name, comment, par_tim
 
 
 def funk_for_short_name_se(sport, kof_nam_se, kof_param_se, name_period_se, gamer2):
@@ -350,10 +341,11 @@ try:
                                         kof_param = str(koef_stakes["A"])
                                         scor = gameInfo["SS"]
 
-                                        comment = funk_for_short_name(sport, kof_nam,
-                                                                      kof_param, gamer1, gamer2)[1]
-                                        koef_Tot = funk_for_short_name(sport, kof_nam,
-                                                                       kof_param, gamer1, gamer2)[0]
+                                        comment, koef_Tot, new_par = funk_for_short_name(sport, kof_nam,
+                                                                      kof_param, gamer1, gamer2)[1], funk_for_short_name(sport, kof_nam,
+                                                                      kof_param, gamer1, gamer2)[0], funk_for_short_name(sport, kof_nam,
+                                                                      kof_param, gamer1, gamer2)[2]
+
 
                                         dop = {"sport": info_gamer[id_game_hash]["name_sport"],
                                                "game_id": str(info_gamer[id_game_hash]["game_id"]),
@@ -366,6 +358,10 @@ try:
                                         dop = str(dop).replace("'", '"')
                                         koef_stakes_a = str(koef_stakes['F'])
                                         param = str(koef_stakes['A'])
+                                        if new_par:
+                                            param = new_par
+                                        else:
+                                            param = str(koef_stakes['A'])
                                         game_orig = str(info_koef[id_game_hash]['game_id'])
 
                                         name_hash = hashlib.md5(
@@ -445,7 +441,7 @@ try:
         #     'gamer1': '',
         #     'gamer2': ''
         # }
-        time.sleep(3)
+        time.sleep(1)
 except KeyboardInterrupt:
     print('Принудиловка')
     skill.close_session()
