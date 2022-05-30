@@ -29,6 +29,14 @@ headers = {
 
 
 def funk_for_short_name(sport, kof_nam, kof_param, gamer1, gamer2):
+
+    global kof_nam_new
+    # if sport == 'Теннис':
+    #     if 'Исход' in kof_nam:
+    #         if 'сет' and 'гейм' in kof_nam:
+    #             print('условие выполнено')
+    #
+    # print('нет условия')
     div_kof_name = kof_nam.split(':')
     if len(div_kof_name[0].split(' ')) > 1:
         if div_kof_name[0].split(' ')[1] in ['сет', "гейм", "четверть", "половина", "тайм", "период"]:
@@ -89,10 +97,27 @@ def funk_for_short_name(sport, kof_nam, kof_param, gamer1, gamer2):
     kof_nam = kof_nam.replace(peri, '')
     short_name = f'{sport}.{peri}.{kof_nam_new}'
     comment = f'{sport}.{peri}.{kof_nam}.'
+    if 'Теннис' in short_name and 'Исход' in short_name:
+        if 'Match' in short_name:
+            short_name = short_name
+        elif 'гейм' in short_name:
+            # print(f'поймали в шот наме {short_name}')
+            time_short = short_name.split(' ')
+            par = time_short[2].split('-')[0]
+            time_short[2] = 'N'
+            time_short.append(par)
+            tim = ''
+            for i in time_short:
+                tim += i+' '
+            short_name = tim
+        else:
+            short_name = short_name
     return short_name, comment
 
 
 def funk_for_short_name_se(sport, kof_nam_se, kof_param_se, name_period_se, gamer2):
+
+
     div_kof_name = kof_nam_se.split(':')
     if len(div_kof_name[0].split(' ')) > 1:
         if div_kof_name[0].split(' ')[1] in ['сет', "гейм", "четверть", "половина", "тайм", "период"]:
@@ -318,7 +343,8 @@ try:
                                         #     (active_sport_name[int(sport_id)] + koef_stakes['N'] + bk_name).encode(
                                         #         'utf-8')).hexdigest()
 
-                                        sport = active_sport_name[int(sport_id)]
+                                        sport = active_sport_name[int(voc_sports[int(sportIdThis)])]
+
                                         per = gameInfo["ES"]
                                         kof_nam = koef_stakes["SFN"]
                                         kof_param = str(koef_stakes["A"])
@@ -357,18 +383,15 @@ try:
                                     name_period_se = typ_kof['PN']
                                     for koef_stakes in typ_kof['StakeTypes']:
                                         name_koef_se = koef_stakes['N']
-
                                         for each_kof in koef_stakes['Stakes']:
                                             param_se = each_kof['A']
                                             znach_koef_se = each_kof['F']
                                             kof_hash = hashlib.md5(
                                                 (active_sport_name[int(sport_id)] + str(each_kof['Id']) + each_kof[
                                                     'N'] + str(each_kof['A']) + bk_name).encode('utf-8')).hexdigest()
-                                            # name_hash = hashlib.md5(
-                                            #     (active_sport_name[int(sport_id)] + koef_stakes['N'] + bk_name).encode(
-                                            #         'utf-8')).hexdigest()
 
-                                            sport = active_sport_name[int(sport_id)]
+                                            sport = active_sport_name[int(voc_sports[int(typ_kof['SId'])])]
+                                            # print(f'вывожу спорт из мофдуля SE {sport}')
                                             # per_se = typ_kof["PN"]
                                             kof_nam_se = each_kof["SFN"]
                                             kof_param_se = str(param_se)
