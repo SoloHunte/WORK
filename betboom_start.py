@@ -228,7 +228,7 @@ while skill.connect():
     time.sleep(60)
 cur = skill.cur
 conn = skill.conn
-timeout = 50
+timeout = 60
 bk_name = 'bet_boom'
 
 voc_sports = {1: '1', 3: '2', 15: '3', 4: '4', 12: '5', 10: '6', 94: '7', 53: '8', 95: '9', 96: '10', 17: '14',
@@ -441,7 +441,7 @@ try:
         #     'gamer1': '',
         #     'gamer2': ''
         # }
-        time.sleep(1)
+        time.sleep(3)
 except KeyboardInterrupt:
     print('Принудиловка')
     skill.close_session()
